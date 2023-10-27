@@ -95,10 +95,10 @@
 
         navi {
             bindings = <
-&Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans                                    &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans  &trans  &trans  &trans  &trans
-&Switch_cyr                               &trans  &trans  &trans  &trans            &trans        &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                          &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans            &kp SPACE       &kp ENTER  &trans  &trans  &trans  &trans
+&Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans    &trans          &trans        &trans     &trans
+&trans                                    &trans  &trans  &trans  &trans            &trans                                                             &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&Switch_cyr                               &trans  &trans  &trans  &trans            &trans        &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &trans  &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
+                                                          &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans            &kp SPACE       &kp ENTER  &trans  &trans  &trans    &trans
             >;
         };
 
