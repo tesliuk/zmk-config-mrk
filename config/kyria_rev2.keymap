@@ -9,15 +9,84 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Lang {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <30 43>;
+        };
+    };
+
+    macros {
+        Switch_cyr: Switch_cyr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &tog 1>;
+            label = "SWITCH_CYR";
+        };
+        Switch_eng: Switch_eng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &tog 0>;
+            label = "SWITCH_ENG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        layer_2 {
+        base {
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp F   &kp P      &kp B                                               &kp J   &kp L   &kp U      &kp Y    &kp APOS  &kp SEMI
-&kp TAB  &kp A  &kp R  &kp S   &kp T      &kp G                                               &kp M   &kp N   &kp E      &kp I    &kp O     &kp MINUS
-&trans   &kp Z  &kp X  &kp C   &kp D      &kp V     &kp LGUI  &kp RSHFT  &trans     &trans    &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                       &trans  &kp LCTRL  &kp LALT  &trans    &kp SPACE  &kp ENTER  &kp BSPC  &trans  &trans  &trans
+&kp ESC      &kp Q  &kp W  &kp F   &kp P      &kp B                                               &kp J    &kp L   &kp U      &kp Y    &kp APOS  &kp SEMI
+&kp TAB      &kp A  &kp R  &kp S   &kp T      &kp G                                               &kp M    &kp N   &kp E      &kp I    &kp O     &kp MINUS
+&Switch_cyr  &kp Z  &kp X  &kp C   &kp D      &kp V     &kp LGUI  &kp RSHFT  &trans     &trans    &kp K    &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                           &trans  &kp LCTRL  &kp LALT  &trans    &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &trans  &trans
+            >;
+        };
+
+        cyr_base {
+            bindings = <
+&kp ESC      &trans  &trans  &trans  &trans     &trans                                                                &trans      &trans  &trans         &trans     &kp LS(NUMBER_2)  &kp LS(NUMBER_4)
+&kp TAB      &trans  &trans  &trans  &trans     &trans                                                                &trans      &trans  &trans         &trans     &trans            &kp MINUS
+&Switch_eng  &trans  &trans  &trans  &trans     &trans    &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &trans         &trans      &trans  &kp LS(SLASH)  &kp SLASH  &kp LS(PIPE)      &kp EQUAL
+                             &trans  &kp LCTRL  &kp LALT  &trans            &kp SPACE       &kp ENTER  &kp BACKSPACE  &kp DELETE  &trans  &trans
+            >;
+        };
+
+        cyr_second {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        navi {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -34,8 +103,6 @@
 &trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                             &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
