@@ -77,9 +77,9 @@
 
         cyr_second {
             bindings = <
-&trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&Switch_eng  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE    &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &kp P       &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans      &trans          &kp SQT
+&Switch_eng  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &trans          &trans
                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
