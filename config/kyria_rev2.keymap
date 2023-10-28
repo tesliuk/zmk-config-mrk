@@ -104,7 +104,7 @@
 
         symbol {
             bindings = <
-&kp EQUAL      &kp LS(AMPS)  &kp LS(STAR)   &kp LS(UNDER)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)                                  &trans      &trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans    &trans
+&kp EQUAL      &kp LS(AMPS)  &kp LS(STAR)   &kp LS(UNDER)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)                                  &trans      &trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans    &kp QUESTION
 &kp LS(UNDER)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT            &kp RBKT                                             &trans      &trans      &kp SEMICOLON     &kp COLON          &kp PIPE  &kp LS(BSLH)
 &kp TILDE      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LPAR            &kp RPAR             &trans  &trans  &trans  &trans  &kp LS(LT)  &kp LS(GT)  &kp COMMA         &kp DOT            &kp FSLH  &kp LS(GRAVE)
                                             &trans         &trans              &trans               &trans  &trans  &trans  &trans  &trans      &trans      &trans
