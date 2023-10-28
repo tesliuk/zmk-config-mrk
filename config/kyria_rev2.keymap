@@ -38,7 +38,15 @@
         Switch_eng: Switch_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_press>,
+                <&to 0>;
             label = "SWITCH_ENG";
         };
         Switch_tap: Switch_tap {
