@@ -61,7 +61,7 @@
             bindings = <
 &Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P                                     &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
 &kp TAB                                   &kp A  &kp R  &kp S  &kp T                                     &kp G                                                                                        &kp M    &kp N      &kp E      &kp I    &kp O     &kp MINUS
-&kp GLOBE                                 &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+&kp LG(SPACE)                             &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
                                                         &mo 5  &Hyper_esc LEFT_CONTROL LG(LEFT_CONTROL)  &Hyper_esc LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
             >;
         };
