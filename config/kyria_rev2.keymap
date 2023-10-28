@@ -23,7 +23,12 @@
         Switch_cyr: Switch_cyr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;
+            bindings 
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                , <&macro_press &to 1>
+                ;
             label = "SWITCH_CYR";
         };
         Switch_eng: Switch_eng {
@@ -38,6 +43,16 @@
             bindings = <&to 1 &kp LG(SPACE)>;
             label = "SWITCH_TAP";
             tap-ms = <300>;
+        };
+        Change_lang: Change_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                ;
+            label = "CHANGE_LANG";
         };
     };
 
