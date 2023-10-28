@@ -89,7 +89,7 @@
 &kp ESCAPE   &kp ASTERISK  &kp N7  &kp N8  &kp N9            &kp SLASH                                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE      &kp SEMICOLON
 &kp TAB      &kp COMMA     &kp N4  &kp N5  &kp N6            &kp PLUS                                                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &kp GRAVE      &kp MINUS
 &Switch_cyr  &kp DOT       &kp N1  &kp N2  &kp N3            &kp MINUS     &kp LEFT_COMMAND  &kp LEFT_SHIFT   &trans     &trans         &kp LESS_THAN         &kp GREATER_THAN       &kp COMMA       &kp PERIOD       &kp BACKSLASH  &kp EQUAL
-                                   &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans            &kp KP_NUMBER_0  &kp ENTER  &kp BACKSPACE  &kp DELETE            &trans                 &trans
+                                   &mo 5   &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 6             &kp KP_NUMBER_0  &kp ENTER  &kp BACKSPACE  &kp DELETE            &trans                 &trans
             >;
         };
 
@@ -104,10 +104,10 @@
 
         symbol {
             bindings = <
-&trans  &trans     &trans     &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp EQUAL      &kp LS(AMPS)  &kp LS(STAR)   &kp LS(UNDER)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)                                  &trans      &trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans    &trans
+&kp LS(UNDER)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT            &kp RBKT                                             &trans      &trans      &kp SEMICOLON     &kp COLON          &kp PIPE  &kp LS(BSLH)
+&kp TILDE      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LPAR            &kp RPAR             &trans  &trans  &trans  &trans  &kp LS(LT)  &kp LS(GT)  &kp COMMA         &kp DOT            &kp FSLH  &kp LS(GRAVE)
+                                            &trans         &trans              &trans               &trans  &trans  &trans  &trans  &trans      &trans      &trans
             >;
         };
 
