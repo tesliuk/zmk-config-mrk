@@ -31,6 +31,13 @@
             bindings = <&kp LG(SPACE) &tog 0>;
             label = "SWITCH_ENG";
         };
+        Switch_tap: Switch_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &kp LG(SPACE)>;
+            label = "SWITCH_TAP";
+            tap-ms = <300>;
+        };
     };
 
     behaviors {
