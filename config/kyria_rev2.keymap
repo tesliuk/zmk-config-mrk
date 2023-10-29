@@ -270,9 +270,9 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         navi {
             bindings = <
-&kp LA(LC(LEFT_SHIFT(N2)))  &kp LA(LC(LEFT_SHIFT(N3)))  &kp LA(LC(LEFT_SHIFT(LEFT)))  &kp LA(LC(LEFT_SHIFT(RIGHT))) &kp LA(LC(LEFT_SHIFT(UP)))            &kp LEFT_ALT                                                             &kp LEFT  &kp DOWN    &kp UP          &kp RIGHT        &kp LA(LC(LEFT_SHIFT(N2)))     &kp LA(LC(LEFT_SHIFT(N3)))
-&kp LA(LC(LEFT_SHIFT(N1)))                                    &kp LA(LC(LEFT_SHIFT(N4)))  &trans  &trans  &kp LA(LC(LEFT_SHIFT(DOWN)))            &kp LEFT_GUI                                                             &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LA(LC(LEFT_SHIFT(N1)))  &kp LA(LC(LEFT_SHIFT(N4)))
-&kp LA(LC(LEFT_SHIFT(N9)))                               &trans  &trans  &trans  &trans            &kp LS(LGUI)        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &trans   &trans   &trans   &trans    &kp LA(LC(LEFT_SHIFT(N9)))
+&kp LA(LC(LS(N2)))  &kp LA(LC(LEFT_SHIFT(N3)))  &kp LA(LC(LS(LEFT)))  &kp LA(LC(LS(RIGHT))) &kp LA(LC(LS(UP)))            &kp LEFT_ALT                                                             &kp LEFT  &kp DOWN    &kp UP          &kp RIGHT        &kp LA(LC(LS(N2)))     &kp LA(LC(LS(N3)))
+&kp LA(LC(LS(N1)))                                    &kp LA(LC(LS(N4)))  &trans  &trans  &kp LA(LC(LS(DOWN)))            &kp LEFT_GUI                                                             &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LA(LC(LS(N1)))  &kp LA(LC(LS(N4)))
+&kp LA(LC(LS(N9)))                               &trans  &trans  &trans  &trans            &kp LS(LGUI)        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &trans   &trans   &trans   &trans    &kp LA(LC(LS(N9)))
                                                           &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &trans  &kp ENTER  &trans  &mo 6  &kp DOWN  &kp UP
             >;
         };
