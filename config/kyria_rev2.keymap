@@ -209,18 +209,18 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
     };
 
     behaviors {
-        Hyper_esc: Hyper_esc {
+        Tap_hold: Tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "HYPER_ESC";
+            label = "TAP_HOLD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
-        cyrxtra_tab: cyrxtra_tab {
+        Tap_layer: Tap_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "CYRXTRA_TAB";
+            label = "TAP_LAYER";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -234,17 +234,17 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         base {
             bindings = <
-&Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P                                     &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
-&kp TAB                                   &kp A  &kp R  &kp S  &kp T                                     &kp G                                                                                        &kp M    &kp N      &kp E      &kp I    &kp O     &ru_ja
-&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &ru_tz
-                                                        &mo 5  &Hyper_esc LEFT_CONTROL LG(LEFT_CONTROL)  &Hyper_esc LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
+&Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &ru_ja
+&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Tap_hold LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &ru_tz
+                                                        &mo 5  &Tap_hold LEFT_CONTROL LG(LEFT_CONTROL)  &Tap_hold LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
             >;
         };
 
         cyr_base {
             bindings = <
-&Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp E  &kp R      &kp T                                                                         &kp Y       &kp U       &kp I          &kp O      &kp LS(NUMBER_2)  &kp LS(NUMBER_4)
-&kp TAB                                   &kp A  &kp S  &kp D  &kp F      &cyrxtra_tab 2 G                                                              &kp H       &kp J       &kp K          &kp L      &kp SEMICOLON     &kp MINUS
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp E  &kp R      &kp T                                                                         &kp Y       &kp U       &kp I          &kp O      &kp LS(NUMBER_2)  &kp LS(NUMBER_4)
+&kp TAB                                   &kp A  &kp S  &kp D  &kp F      &Tap_layer 2 G                                                              &kp H       &kp J       &kp K          &kp L      &kp SEMICOLON     &kp MINUS
 &to 0                                     &kp Z  &kp X  &kp C  &kp V      &kp B             &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mo 3      &mo 4          &kp N       &kp M       &kp LS(SLASH)  &kp SLASH  &kp LS(PIPE)      &kp EQUAL
                                                         &mo 5  &kp LCTRL  &kp LALT          &mo 6             &kp SPACE       &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp K_COPY  &kp K_PASTE
             >;
@@ -270,7 +270,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         navi {
             bindings = <
-&Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans    &trans          &trans        &trans     &trans
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &trans  &trans  &trans  &trans            &trans                                                             &trans  &trans    &trans          &trans        &trans     &trans
 &trans                                    &trans  &trans  &trans  &trans            &trans                                                             &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
 &Switch_cyr                               &trans  &trans  &trans  &trans            &trans        &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans     &trans  &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
                                                           &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans            &kp SPACE       &kp ENTER  &trans  &trans  &trans    &trans
