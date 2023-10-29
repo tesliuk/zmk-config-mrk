@@ -70,6 +70,7 @@ ZMK_UNICODE_SINGLE(div,            0x00, 0x00, 0x00, 0xF7)  // ÷: U+00F7
 ZMK_UNICODE_SINGLE(neq,            0x00, 0x00, 0x22, 0x60)  // ≠: U+2260
 ZMK_UNICODE_SINGLE(copy,           0x00, 0x00, 0x00, 0xA9)  // ©: U+00A9
 ZMK_UNICODE_SINGLE(trade,          0x00, 0x00, 0x21, 0x22)  // ™: U+2122
+ZMK_UNICODE_SINGLE(inverted_question_mark, 0x00, 0x00, 0x00, 0xBF)  // ¿: U+00BF
 ZMK_UNICODE_PAIR(a_acute,      N0, N0,  E,  N1,   N0, N0,  C,  N1) // á, Á: U+00E1, U+00C1
 ZMK_UNICODE_PAIR(e_acute,      N0, N0,  E,  N9,   N0, N0,  C,  N9) // é, É: U+00E9, U+00C9
 ZMK_UNICODE_PAIR(i_acute,      N0, N0,  E,  D,   N0, N0,  C,  D) // í, Í: U+00ED, U+00CD
