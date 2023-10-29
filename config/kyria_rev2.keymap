@@ -29,8 +29,7 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&macro_release &kp LGUI>;
 
             label = "SWITCH_CYR";
         };
@@ -43,8 +42,7 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&macro_release &kp LGUI>;
 
             label = "SWITCH_ENG";
         };
@@ -63,8 +61,7 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&macro_release &kp LGUI>;
 
             label = "CHANGE_LANG";
         };
