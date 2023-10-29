@@ -30,7 +30,8 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 300>,
+                <&macro_release>,
+                <&kp LGUI>,
                 <&macro_press>,
                 <&to 1>;
 
@@ -46,7 +47,8 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 300>,
+                <&macro_release>,
+                <&kp LGUI>,
                 <&macro_press>,
                 <&to 0>;
 
