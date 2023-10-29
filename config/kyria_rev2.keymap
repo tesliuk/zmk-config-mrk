@@ -98,8 +98,44 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         Lang {
             bindings = <&Change_lang>;
-            key-positions = <30 43>;
+            key-positions = <44 45>;
             require-prior-idle-ms = <150>;
+        };
+        Close_wind {
+            bindings = <&kp LG(W)>;
+            key-positions = <4 5>;
+        };
+        Copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <5 17>;
+        };
+        Paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <17 29>;
+        };
+        Undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <6 18>;
+        };
+        Redo {
+            bindings = <&kp LG(Y)>;
+            key-positions = <18 34>;
+        };
+        New_wind {
+            bindings = <&kp LG(N)>;
+            key-positions = <6 7>;
+        };
+        Save {
+            bindings = <&kp LG(N)>;
+            key-positions = <28 29>;
+        };
+        New_tab {
+            bindings = <&kp LG(T)>;
+            key-positions = <34 35>;
+        };
+        Alfred {
+            bindings = <&kp LG(W)>;
+            key-positions = <31 44>;
         };
     };
 
