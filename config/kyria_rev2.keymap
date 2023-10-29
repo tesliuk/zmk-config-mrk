@@ -30,8 +30,8 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_press>,
-                <&to 1>;
+                <&macro_wait_time 30>,
+                <&macro_press &to 1>;
 
             label = "SWITCH_CYR";
         };
@@ -45,8 +45,9 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_press>,
-                <&to 0>;
+                <&macro_wait_time 30>,
+                <&macro_press &to 0>;
+
             label = "SWITCH_ENG";
         };
         Switch_tap: Switch_tap {
