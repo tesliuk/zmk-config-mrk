@@ -243,19 +243,19 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         cyr_main {
             bindings = <
-&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp E  &kp R      &kp T                                                                         &kp Y       &kp U       &kp I          &kp O      &kp LS(NUMBER_2)  &kp LS(NUMBER_4)
-&kp TAB                                   &kp A  &kp S  &kp D  &kp F      &Tap_layer 2 G                                                              &kp H       &kp J       &kp K          &kp L      &kp SEMICOLON     &kp MINUS
-&to 0                                     &kp Z  &kp X  &kp C  &kp V      &kp B             &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mo 3      &mo 4          &kp N       &kp M       &kp LS(SLASH)  &kp SLASH  &kp LS(PIPE)      &kp EQUAL
-                                                        &mo 5  &kp LCTRL  &kp LALT          &mo 6             &kp SPACE       &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp K_COPY  &kp K_PASTE
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
+&Tap_hold LA(LC(LEFT_SHIFT)) TAB    &ru_f  &ru_y  &ru_v  &ru_a      &ru_p                                                              &ru_r       &ru_o       &ru_l          &ru_d      &ru_zh     &kp SEMICOLON
+&mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
+                                                        &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
         cyr_xtra {
             bindings = <
-&kp TILDE    &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &kp P       &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans      &trans          &kp SQT
-&Switch_eng  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &trans          &trans
-                             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &ru_jo  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans       &ru_z  &ru_kh
+&trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans      &trans          &ru_e
+&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &ru_tz  &ru_b  &ru_ju  &trans          &trans
+                             &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
