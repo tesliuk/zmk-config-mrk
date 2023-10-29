@@ -261,10 +261,10 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         num {
             bindings = <
-&kp ESCAPE   &kp ASTERISK  &kp N7  &kp N8  &kp N9            &kp SLASH                                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE      &kp SEMICOLON
-&kp TAB      &kp COMMA     &kp N4  &kp N5  &kp N6            &kp PLUS                                                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans          &trans           &kp GRAVE      &kp MINUS
-&Switch_cyr  &kp DOT       &kp N1  &kp N2  &kp N3            &kp MINUS     &kp LEFT_COMMAND  &kp LEFT_SHIFT   &trans     &trans         &kp LESS_THAN         &kp GREATER_THAN       &kp COMMA       &kp PERIOD       &kp BACKSLASH  &kp EQUAL
-                                   &mo 5   &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 6             &kp KP_NUMBER_0  &kp ENTER  &kp BACKSPACE  &kp DELETE            &trans                 &trans
+&times   &kp KP_MINUS  &kp N7  &kp N8  &kp N9            &kp KP_PLUS                                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT  &kp GT  &kp APOS      &kp COLON
+&div      &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6            &kp KP_DIVIDE                                                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &leq          &ged           &kp UNDER      &kp SEMICOLON
+&approx  &kp KP_EQUAL       &kp N1  &kp N2  &kp N3            &kp N0     &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL         &kp LEFT_BRACE         &kp RIGHT_BRACE       &kp COMMA       &kp PERIOD       &kp BACKSLASH  &kp QUESTION
+                                   &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &trans  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
