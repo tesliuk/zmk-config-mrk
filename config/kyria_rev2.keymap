@@ -24,10 +24,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &to 1>,
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LGUI>;
+                <&macro_press>,
+                <&to 1>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "SWITCH_CYR";
         };
@@ -35,19 +39,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &to 0>,
-                <&macro_press &kp LGUI>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LGUI>;
+                <&macro_press>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "SWITCH_ENG";
         };
         Switch_test: Switch_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &to 1>,
-                <&macro_press &Change_lang>;
+            bindings = <&macro_press>, <&to 1>, <&macro_press>, <&Change_lang>;
 
             label = "SWITCH_TEST";
         };
@@ -66,7 +72,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp SPACE>,
-                <&macro_release &kp LGUI>;
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "CHANGE_LANG";
         };
@@ -100,7 +107,7 @@
             bindings = <
 &Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P                                     &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
 &kp TAB                                   &kp A  &kp R  &kp S  &kp T                                     &kp G                                                                                        &kp M    &kp N      &kp E      &kp I    &kp O     &kp MINUS
-&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &Switch_test
                                                         &mo 5  &Hyper_esc LEFT_CONTROL LG(LEFT_CONTROL)  &Hyper_esc LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
             >;
         };
