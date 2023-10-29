@@ -15,7 +15,40 @@
 ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
 ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
 ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
-ZMK_UNICODE_PAIR( ru_e,   N0, N4,  N4,  D,   N0, N4,  N2,  D )
+ZMK_UNICODE_PAIR(ru_a,    N0, N4,  N3,  E,   N0, N4,  N2,  E) // а, А: U+0430, U+0410
+ZMK_UNICODE_PAIR(ru_b,    N0, N4,  N3,  F,   N0, N4,  N2,  F) // б, Б: U+0431, U+0411
+ZMK_UNICODE_PAIR(ru_v,    N0, N4,  N3,  N0,  N0, N4,  N2,  N0) // в, В: U+0432, U+0412
+ZMK_UNICODE_PAIR(ru_g,    N0, N4,  N3,  N1,  N0, N4,  N2,  N1) // г, Г: U+0433, U+0413
+ZMK_UNICODE_PAIR(ru_d,    N0, N4,  N3,  N2,  N0, N4,  N2,  N2) // д, Д: U+0434, U+0414
+ZMK_UNICODE_PAIR(ru_je,    N0, N4,  N3,  N5,  N0, N4,  N2,  N5) // е, Е: U+0435, U+0415
+ZMK_UNICODE_PAIR(ru_jo,   N0, N4,  N5,  N1,  N0, N4,  N0,  N1) // ё, Ё: U+0451, U+0401
+ZMK_UNICODE_PAIR(ru_zh,   N0, N4,  N3,  N6,  N0, N4,  N2,  N6) // ж, Ж: U+0436, U+0416
+ZMK_UNICODE_PAIR(ru_z,    N0, N4,  N3,  N7,  N0, N4,  N2,  N7) // з, З: U+0437, U+0417
+ZMK_UNICODE_PAIR(ru_i,    N0, N4,  N3,  N8,  N0, N4,  N2,  N8) // и, И: U+0438, U+0418
+ZMK_UNICODE_PAIR(ru_j,    N0, N4,  N3,  N9,  N0, N4,  N2,  N9) // й, Й: U+0439, U+0419
+ZMK_UNICODE_PAIR(ru_k,    N0, N4,  N3,  A,   N0, N4,  N2,  A) // к, К: U+043A, U+041A
+ZMK_UNICODE_PAIR(ru_l,    N0, N4,  N3,  B,   N0, N4,  N2,  B) // л, Л: U+043B, U+041B
+ZMK_UNICODE_PAIR(ru_m,    N0, N4,  N3,  C,   N0, N4,  N2,  C) // м, М: U+043C, U+041C
+ZMK_UNICODE_PAIR(ru_n,    N0, N4,  N3,  D,   N0, N4,  N2,  D) // н, Н: U+043D, U+041D
+ZMK_UNICODE_PAIR(ru_o,    N0, N4,  N3,  E,   N0, N4,  N2,  E) // о, О: U+043E, U+041E
+ZMK_UNICODE_PAIR(ru_p,    N0, N4,  N3,  F,   N0, N4,  N2,  F) // п, П: U+043F, U+041F
+ZMK_UNICODE_PAIR(ru_r,    N0, N4,  N4,  N0,  N0, N4,  N2,  N0) // р, Р: U+0440, U+0420
+ZMK_UNICODE_PAIR(ru_s,    N0, N4,  N4,  N1,  N0, N4,  N2,  N1) // с, С: U+0441, U+0421
+ZMK_UNICODE_PAIR(ru_t,    N0, N4,  N4,  N2,  N0, N4,  N2,  N2) // т, Т: U+0442, U+0422
+ZMK_UNICODE_PAIR(ru_u,    N0, N4,  N4,  N3,  N0, N4,  N2,  N3) // у, У: U+0443, U+0423
+ZMK_UNICODE_PAIR(ru_f,    N0, N4,  N4,  N4,  N0, N4,  N2,  N4) // ф, Ф: U+0444, U+0424
+ZMK_UNICODE_PAIR(ru_kh,   N0, N4,  N4,  N5,  N0, N4,  N2,  N5) // х, Х: U+0445, U+0425
+ZMK_UNICODE_PAIR(ru_ts,   N0, N4,  N4,  N6,  N0, N4,  N2,  N6) // ц, Ц: U+0446, U+0426
+ZMK_UNICODE_PAIR(ru_ch,   N0, N4,  N4,  N7,  N0, N4,  N2,  N7) // ч, Ч: U+0447, U+0427
+ZMK_UNICODE_PAIR(ru_sh,   N0, N4,  N4,  N8,  N0, N4,  N2,  N8) // ш, Ш: U+0448, U+0428
+ZMK_UNICODE_PAIR(ru_sch,  N0, N4,  N4,  N9,  N0, N4,  N2,  N9) // щ, Щ: U+0449, U+0429
+ZMK_UNICODE_PAIR(ru_tz,   N0, N4,  N4,  A,   N0, N4,  N2,  A) // ъ, Ъ: U+044A, U+042A
+ZMK_UNICODE_PAIR(ru_y,    N0, N4,  N4,  B,   N0, N4,  N2,  B) // ы, Ы: U+044B, U+042B
+ZMK_UNICODE_PAIR(ru_mz,   N0, N4,  N4,  C,   N0, N4,  N2,  C) // ь, Ь: U+044C, U+042C
+ZMK_UNICODE_PAIR(ru_e,   N0, N4,  N4,  D,   N0, N4,  N2,  D) // э, Э: U+044D, U+042D
+ZMK_UNICODE_PAIR(ru_ju,   N0, N4,  N4,  E,   N0, N4,  N2,  E) // ю, Ю: U+044E, U+042E
+ZMK_UNICODE_PAIR(ru_ja,   N0, N4,  N4,  F,   N0, N4,  N2,  F) // я, Я: U+044F, U+042F
+
 
 
 / {
@@ -113,8 +146,8 @@ ZMK_UNICODE_PAIR( ru_e,   N0, N4,  N4,  D,   N0, N4,  N2,  D )
         base {
             bindings = <
 &Hyper_esc LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P                                     &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
-&kp TAB                                   &kp A  &kp R  &kp S  &kp T                                     &kp G                                                                                        &kp M    &kp N      &kp E      &kp I    &kp O     &ru_e
-&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &de_ae
+&kp TAB                                   &kp A  &kp R  &kp S  &kp T                                     &kp G                                                                                        &kp M    &kp N      &kp E      &kp I    &kp O     &ru_ja
+&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Hyper_esc LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &ru_tz
                                                         &mo 5  &Hyper_esc LEFT_CONTROL LG(LEFT_CONTROL)  &Hyper_esc LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
             >;
         };
