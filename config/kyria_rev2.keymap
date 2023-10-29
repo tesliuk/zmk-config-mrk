@@ -70,26 +70,26 @@ ZMK_UNICODE_PAIR(div,              N0, N0,  F,  N7,   N0, N0,  F,  N7) // ÷, ÷
 ZMK_UNICODE_PAIR(neq,              N8, N9,  N6,  N0,   N8, N9,  N6,  N0) // ≠, ≠: U+2260
 ZMK_UNICODE_PAIR(copy,             N0, N0,  A,  N9,   N0, N0,  A,  N9) // ©, ©: U+00A9
 ZMK_UNICODE_PAIR(trade,            N8, N4,  N2,  N2,   N8, N4,  N2,  N2) // ™, ™: U+2122
-ZMK_UNICODE_PAIR(a_acute,      N0, N0,  E,  N1,   N0, N0,  C,  N1) // á, Á: U+00E1, U+00C1
-ZMK_UNICODE_PAIR(e_acute,      N0, N0,  E,  N9,   N0, N0,  C,  N9) // é, É: U+00E9, U+00C9
-ZMK_UNICODE_PAIR(i_acute,      N0, N0,  E,  D,   N0, N0,  C,  D) // í, Í: U+00ED, U+00CD
-ZMK_UNICODE_PAIR(o_acute,      N0, N0,  F,  N3,   N0, N0,  D,  N3) // ó, Ó: U+00F3, U+00D3
-ZMK_UNICODE_PAIR(u_acute,      N0, N0,  F,  A,   N0, N0,  D,  A) // ú, Ú: U+00FA, U+00DA
-ZMK_UNICODE_PAIR(c_cedilla,    N0, N0,  E,  N7,   N0, N0,  C,  N7) // ç, Ç: U+00E7, U+00C7
-ZMK_UNICODE_PAIR(n_tilde,      N0, N0,  F,  N1,   N0, N0,  D,  N1) // ñ, Ñ: U+00F1, U+00D1
-ZMK_UNICODE_PAIR(a_grave,      N0, N0,  E,  N0,   N0, N0,  C,  N0) // à, À: U+00E0, U+00C0
-ZMK_UNICODE_PAIR(e_grave,      N0, N0,  E,  N8,   N0, N0,  C,  N8) // è, È: U+00E8, U+00C8
-ZMK_UNICODE_PAIR(i_grave,      N0, N0,  E,  C,   N0, N0,  C,  C) // ì, Ì: U+00EC, U+00CC
-ZMK_UNICODE_PAIR(o_grave,      N0, N0,  F,  N2,   N0, N0,  D,  N2) // ò, Ò: U+00F2, U+00D2
-ZMK_UNICODE_PAIR(u_grave,      N0, N0,  F,  N9,   N0, N0,  D,  N9) // ù, Ù: U+00F9, U+00D9
-ZMK_UNICODE_PAIR(a_circumflex, N0, N0,  E,  N2,   N0, N0,  C,  N2) // â, Â: U+00E2, U+00C2
-ZMK_UNICODE_PAIR(e_circumflex, N0, N0,  E,  A,   N0, N0,  C,  A) // ê, Ê: U+00EA, U+00CA
-ZMK_UNICODE_PAIR(i_circumflex, N0, N0,  E,  E,   N0, N0,  C,  E) // î, Î: U+00EE, U+00CE
-ZMK_UNICODE_PAIR(o_circumflex, N0, N0,  F,  N4,   N0, N0,  D,  N4) // ô, Ô: U+00F4, U+00D4
-ZMK_UNICODE_PAIR(u_circumflex, N0, N0,  F,  B,   N0, N0,  D,  B) // û, Û: U+00FB, U+00DB
-ZMK_UNICODE_PAIR(a_diaeresis,  N0, N0,  E,  N4,   N0, N0,  C,  N4) // ä, Ä: U+00E4, U+00C4
-ZMK_UNICODE_PAIR(e_diaeresis,  N0, N0,  E,  B,   N0, N0,  C,  B) // ë, Ë: U+00EB, U+00CB
-ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00EF, U+00CF
+//ZMK_UNICODE_PAIR(a_acute,      N0, N0,  E,  N1,   N0, N0,  C,  N1) // á, Á: U+00E1, U+00C1
+//ZMK_UNICODE_PAIR(e_acute,      N0, N0,  E,  N9,   N0, N0,  C,  N9) // é, É: U+00E9, U+00C9
+//ZMK_UNICODE_PAIR(i_acute,      N0, N0,  E,  D,   N0, N0,  C,  D) // í, Í: U+00ED, U+00CD
+//ZMK_UNICODE_PAIR(o_acute,      N0, N0,  F,  N3,   N0, N0,  D,  N3) // ó, Ó: U+00F3, U+00D3
+//ZMK_UNICODE_PAIR(u_acute,      N0, N0,  F,  A,   N0, N0,  D,  A) // ú, Ú: U+00FA, U+00DA
+//ZMK_UNICODE_PAIR(c_cedilla,    N0, N0,  E,  N7,   N0, N0,  C,  N7) // ç, Ç: U+00E7, U+00C7
+//ZMK_UNICODE_PAIR(n_tilde,      N0, N0,  F,  N1,   N0, N0,  D,  N1) // ñ, Ñ: U+00F1, U+00D1
+//ZMK_UNICODE_PAIR(a_grave,      N0, N0,  E,  N0,   N0, N0,  C,  N0) // à, À: U+00E0, U+00C0
+//ZMK_UNICODE_PAIR(e_grave,      N0, N0,  E,  N8,   N0, N0,  C,  N8) // è, È: U+00E8, U+00C8
+//ZMK_UNICODE_PAIR(i_grave,      N0, N0,  E,  C,   N0, N0,  C,  C) // ì, Ì: U+00EC, U+00CC
+//ZMK_UNICODE_PAIR(o_grave,      N0, N0,  F,  N2,   N0, N0,  D,  N2) // ò, Ò: U+00F2, U+00D2
+//ZMK_UNICODE_PAIR(u_grave,      N0, N0,  F,  N9,   N0, N0,  D,  N9) // ù, Ù: U+00F9, U+00D9
+//ZMK_UNICODE_PAIR(a_circumflex, N0, N0,  E,  N2,   N0, N0,  C,  N2) // â, Â: U+00E2, U+00C2
+//ZMK_UNICODE_PAIR(e_circumflex, N0, N0,  E,  A,   N0, N0,  C,  A) // ê, Ê: U+00EA, U+00CA
+//ZMK_UNICODE_PAIR(i_circumflex, N0, N0,  E,  E,   N0, N0,  C,  E) // î, Î: U+00EE, U+00CE
+//ZMK_UNICODE_PAIR(o_circumflex, N0, N0,  F,  N4,   N0, N0,  D,  N4) // ô, Ô: U+00F4, U+00D4
+//ZMK_UNICODE_PAIR(u_circumflex, N0, N0,  F,  B,   N0, N0,  D,  B) // û, Û: U+00FB, U+00DB
+//ZMK_UNICODE_PAIR(a_diaeresis,  N0, N0,  E,  N4,   N0, N0,  C,  N4) // ä, Ä: U+00E4, U+00C4
+//ZMK_UNICODE_PAIR(e_diaeresis,  N0, N0,  E,  B,   N0, N0,  C,  B) // ë, Ë: U+00EB, U+00CB
+//ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00EF, U+00CF
 
 / {
     combos {
