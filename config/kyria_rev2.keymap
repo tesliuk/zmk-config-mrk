@@ -25,10 +25,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &to 1>,
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp SPACE>,
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
                 <&macro_release &kp LGUI>;
 
             label = "SWITCH_CYR";
@@ -38,13 +36,20 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &to 0>,
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp SPACE>,
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
                 <&macro_release &kp LGUI>;
 
             label = "SWITCH_ENG";
+        };
+        Switch_test: Switch_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &to 1>,
+                <&macro_press &Change_lang>;
+
+            label = "SWITCH_TEST";
         };
         Switch_tap: Switch_tap {
             compatible = "zmk,behavior-macro";
