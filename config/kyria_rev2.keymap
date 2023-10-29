@@ -48,8 +48,48 @@ ZMK_UNICODE_PAIR(ru_mz,   N0, N4,  N4,  C,   N0, N4,  N2,  C) // ь, Ь: U+044C,
 ZMK_UNICODE_PAIR(ru_e,   N0, N4,  N4,  D,   N0, N4,  N2,  D) // э, Э: U+044D, U+042D
 ZMK_UNICODE_PAIR(ru_ju,   N0, N4,  N4,  E,   N0, N4,  N2,  E) // ю, Ю: U+044E, U+042E
 ZMK_UNICODE_PAIR(ru_ja,   N0, N4,  N4,  F,   N0, N4,  N2,  F) // я, Я: U+044F, U+042F
-
-
+ZMK_UNICODE_PAIR(em_dash,          N8, N2, N1, N2,   N8, N2, N1, N2) // —, —: U+2014
+ZMK_UNICODE_PAIR(horizontal_bar,   N8, N2, N1, N5,   N8, N2, N1, N5) // ―, ―: U+2015
+ZMK_UNICODE_PAIR(ellipsis,         N8, N2, N3, N0,   N8, N2, N3, N0) // …, …: U+2026
+ZMK_UNICODE_PAIR(pound,            N0, N0,  A,  N3,   N0, N0,  A,  N3) // £, £: U+00A3
+ZMK_UNICODE_PAIR(dollar,           N0, N0,  N2, N4,   N0, N0,  N2, N4) // $, $: U+0024
+ZMK_UNICODE_PAIR(rouble,           N8, N4,  N1,  E,   N8, N4,  N1,  E) // ₽, ₽: U+20BD
+ZMK_UNICODE_PAIR(euro,             N0, N0,  AC, N0,   N0, N0,  AC, N0) // €, €: U+20AC
+ZMK_UNICODE_PAIR(leq,              N8, N8,  N1,  N4,   N8, N8,  N1,  N4) // ≤, ≤: U+2264
+ZMK_UNICODE_PAIR(geq,              N8, N8,  N1,  N5,   N8, N8,  N1,  N5) // ≥, ≥: U+2265
+ZMK_UNICODE_PAIR(approx,           N8, N9,  N0,  N0,   N8, N9,  N0,  N0) // ≈, ≈: U+2248
+ZMK_UNICODE_PAIR(times,            N0, N0,  D,  N7,   N0, N0,  D,  N7) // ×, ×: U+00D7
+ZMK_UNICODE_PAIR(ldquo,            N8, N4,  N1,  E,   N8, N4,  N1,  E) // „, „: U+201E
+ZMK_UNICODE_PAIR(rdquo,            N8, N4,  N1,  F,   N8, N4,  N1,  F) // “, “: U+201C
+ZMK_UNICODE_PAIR(laquo,            N8, N4,  N1,  A,   N8, N4,  N1,  A) // «, «: U+00AB
+ZMK_UNICODE_PAIR(raquo,            N8, N4,  N1,  B,   N8, N4,  N1,  B) // », »: U+00BB
+ZMK_UNICODE_PAIR(bullet,           N8, N2,  N2,  N2,   N8, N2,  N2,  N2) // •, •: U+2022
+ZMK_UNICODE_PAIR(plusminus,        N0, N0,  B,  N1,   N0, N0,  B,  N1) // ±, ±: U+00B1
+ZMK_UNICODE_PAIR(degree,           N0, N0,  B,  N0,   N0, N0,  B,  N0) // °, °: U+00B0
+ZMK_UNICODE_PAIR(div,              N0, N0,  F,  N7,   N0, N0,  F,  N7) // ÷, ÷: U+00F7
+ZMK_UNICODE_PAIR(neq,              N8, N9,  N6,  N0,   N8, N9,  N6,  N0) // ≠, ≠: U+2260
+ZMK_UNICODE_PAIR(copy,             N0, N0,  A,  N9,   N0, N0,  A,  N9) // ©, ©: U+00A9
+ZMK_UNICODE_PAIR(trade,            N8, N4,  N2,  N2,   N8, N4,  N2,  N2) // ™, ™: U+2122
+ZMK_UNICODE_PAIR(a_acute,      N0, N0,  E,  N1,   N0, N0,  C,  N1) // á, Á: U+00E1, U+00C1
+ZMK_UNICODE_PAIR(e_acute,      N0, N0,  E,  N9,   N0, N0,  C,  N9) // é, É: U+00E9, U+00C9
+ZMK_UNICODE_PAIR(i_acute,      N0, N0,  E,  D,   N0, N0,  C,  D) // í, Í: U+00ED, U+00CD
+ZMK_UNICODE_PAIR(o_acute,      N0, N0,  F,  N3,   N0, N0,  D,  N3) // ó, Ó: U+00F3, U+00D3
+ZMK_UNICODE_PAIR(u_acute,      N0, N0,  F,  A,   N0, N0,  D,  A) // ú, Ú: U+00FA, U+00DA
+ZMK_UNICODE_PAIR(c_cedilla,    N0, N0,  E,  N7,   N0, N0,  C,  N7) // ç, Ç: U+00E7, U+00C7
+ZMK_UNICODE_PAIR(n_tilde,      N0, N0,  F,  N1,   N0, N0,  D,  N1) // ñ, Ñ: U+00F1, U+00D1
+ZMK_UNICODE_PAIR(a_grave,      N0, N0,  E,  N0,   N0, N0,  C,  N0) // à, À: U+00E0, U+00C0
+ZMK_UNICODE_PAIR(e_grave,      N0, N0,  E,  N8,   N0, N0,  C,  N8) // è, È: U+00E8, U+00C8
+ZMK_UNICODE_PAIR(i_grave,      N0, N0,  E,  C,   N0, N0,  C,  C) // ì, Ì: U+00EC, U+00CC
+ZMK_UNICODE_PAIR(o_grave,      N0, N0,  F,  N2,   N0, N0,  D,  N2) // ò, Ò: U+00F2, U+00D2
+ZMK_UNICODE_PAIR(u_grave,      N0, N0,  F,  N9,   N0, N0,  D,  N9) // ù, Ù: U+00F9, U+00D9
+ZMK_UNICODE_PAIR(a_circumflex, N0, N0,  E,  N2,   N0, N0,  C,  N2) // â, Â: U+00E2, U+00C2
+ZMK_UNICODE_PAIR(e_circumflex, N0, N0,  E,  A,   N0, N0,  C,  A) // ê, Ê: U+00EA, U+00CA
+ZMK_UNICODE_PAIR(i_circumflex, N0, N0,  E,  E,   N0, N0,  C,  E) // î, Î: U+00EE, U+00CE
+ZMK_UNICODE_PAIR(o_circumflex, N0, N0,  F,  N4,   N0, N0,  D,  N4) // ô, Ô: U+00F4, U+00D4
+ZMK_UNICODE_PAIR(u_circumflex, N0, N0,  F,  B,   N0, N0,  D,  B) // û, Û: U+00FB, U+00DB
+ZMK_UNICODE_PAIR(a_diaeresis,  N0, N0,  E,  N4,   N0, N0,  C,  N4) // ä, Ä: U+00E4, U+00C4
+ZMK_UNICODE_PAIR(e_diaeresis,  N0, N0,  E,  B,   N0, N0,  C,  B) // ë, Ë: U+00EB, U+00CB
+ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00EF, U+00CF
 
 / {
     combos {
