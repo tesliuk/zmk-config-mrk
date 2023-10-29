@@ -234,14 +234,14 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         base {
             bindings = <
-&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp SEMI
-&Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &ru_ja
-&Switch_cyr                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &Tap_hold LEFT_COMMAND LG(SPACE)  &kp RSHFT  &mo 3      &mo 4     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &ru_tz
-                                                        &mo 5  &Tap_hold LEFT_CONTROL LG(LEFT_CONTROL)  &Tap_hold LALT LG(LALT)  &mo 6                              &kp SPACE  &kp ENTER  &kp BSPC  &kp DEL  &kp LG(C)  &kp LG(V)
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp COLON
+&Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &kp SEMI
+&kp TILDE                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
+                                                        &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
-        cyr_base {
+        cyr_main {
             bindings = <
 &Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp E  &kp R      &kp T                                                                         &kp Y       &kp U       &kp I          &kp O      &kp LS(NUMBER_2)  &kp LS(NUMBER_4)
 &kp TAB                                   &kp A  &kp S  &kp D  &kp F      &Tap_layer 2 G                                                              &kp H       &kp J       &kp K          &kp L      &kp SEMICOLON     &kp MINUS
@@ -250,7 +250,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             >;
         };
 
-        cyr_second {
+        cyr_xtra {
             bindings = <
 &kp TILDE    &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &kp P       &kp LEFT_BRACE  &kp RIGHT_BRACE
 &trans       &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans      &trans          &kp SQT
@@ -286,7 +286,21 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             >;
         };
 
-        function_layer {
+        function {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
+            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+
+            bindings = <
+&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_MUTE        &kp C_VOL_DN    &kp C_VOLUME_UP
+&trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans                                        &trans     &kp LG(Z)  &kp LG(Y)  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT
+&trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans            &trans          &trans
+                            &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans     &trans     &trans
+            >;
+        };
+        typography {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
