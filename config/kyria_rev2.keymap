@@ -270,7 +270,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         navi {
             bindings = <
-&kp LA(LC(LS(N2)))  &kp LA(LC(LEFT_SHIFT(N3)))  &kp LA(LC(LS(LEFT)))  &kp LA(LC(LS(RIGHT))) &kp LA(LC(LS(UP)))            &kp LEFT_ALT                                                             &kp LEFT  &kp DOWN    &kp UP          &kp RIGHT        &kp LA(LC(LS(N2)))     &kp LA(LC(LS(N3)))
+&kp LA(LC(LS(N2)))  &kp LA(LC(LS(N3)))  &kp LA(LC(LS(LEFT)))  &kp LA(LC(LS(RIGHT))) &kp LA(LC(LS(UP)))            &kp LEFT_ALT                                                             &kp LEFT  &kp DOWN    &kp UP          &kp RIGHT        &kp LA(LC(LS(N2)))     &kp LA(LC(LS(N3)))
 &kp LA(LC(LS(N1)))                                    &kp LA(LC(LS(N4)))  &trans  &trans  &kp LA(LC(LS(DOWN)))            &kp LEFT_GUI                                                             &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LA(LC(LS(N1)))  &kp LA(LC(LS(N4)))
 &kp LA(LC(LS(N9)))                               &trans  &trans  &trans  &trans            &kp LS(LGUI)        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &trans   &trans   &trans   &trans    &kp LA(LC(LS(N9)))
                                                           &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &trans  &kp ENTER  &trans  &mo 6  &kp DOWN  &kp UP
@@ -279,10 +279,10 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         symbol {
             bindings = <
-&kp EQUAL      &kp LS(AMPS)  &kp LS(STAR)   &kp LS(UNDER)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)                                  &trans      &trans      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans    &kp QUESTION
-&kp LS(UNDER)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT            &kp RBKT                                             &trans      &trans      &kp SEMICOLON     &kp COLON          &kp PIPE  &kp LS(BSLH)
-&kp TILDE      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LPAR            &kp RPAR             &trans  &trans  &trans  &trans  &kp LS(LT)  &kp LS(GT)  &kp COMMA         &kp DOT            &kp FSLH  &kp LS(GRAVE)
-                                            &trans         &trans              &trans               &trans  &trans  &trans  &trans  &trans      &trans      &trans
+&euro      &approx  &kp AMPERSAND   &kp KP_MULTIPLY  &kp UNDER  &BACKSLASH                                  &ldquo      &rdquo      &em_dash  &ellipsis  &copy    &trans &rouble
+&kp GRAVE  &dollar  &kp PERCENT  &kp CARET  &kp FSLH            &laquo                                             &raquo      &horizontal_bar      &degree     &trade          &trans  &pound
+&kp TILDE      &kp EXCL  &kp AT     &kp POUND  &kp PIPE    &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL        &kp LPAR             &kp RPAR &plusminus  &bullet  &neq  &inverted_question_mark
+&kp LEFT  &kp RIGHT  &mo 7  &trans  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
