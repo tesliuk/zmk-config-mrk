@@ -138,7 +138,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             key-positions = <6 7>;
         };
         Save {
-            bindings = <&kp LG(N)>;
+            bindings = <&kp LG(S)>;
             key-positions = <28 29>;
         };
         New_tab {
@@ -146,7 +146,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             key-positions = <34 35>;
         };
         Alfred {
-            bindings = <&kp LG(W)>;
+            bindings = <&kp LA(SPACE)>;
             key-positions = <31 44>;
         };
     };
