@@ -149,6 +149,10 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <&kp LA(SPACE)>;
             key-positions = <31 44>;
         };
+        Caps {
+            bindings = <&kp CAPS>;
+            key-positions = <11 23>;
+        };
     };
 
     macros {
