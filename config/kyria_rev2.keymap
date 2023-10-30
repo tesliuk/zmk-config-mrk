@@ -290,7 +290,8 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&macro>, <&kp>; //&macro on hold, &kp on tap
-    };
+        );
+     };
 
     keymap {
         compatible = "zmk,keymap";
