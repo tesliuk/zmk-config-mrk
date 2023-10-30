@@ -186,6 +186,7 @@ name: name##_mod_tap {                     \
         ENG_MOD_MACRO(eng_gui, LGUI)
         ENG_MOD_MACRO(eng_ctl, LCTRL)
         ENG_MOD_MACRO(eng_hyper, LA(LC(LG(LEFT_SHIFT))))
+        ENG_MOD_MACRO(eng_meh, LA(LC(LEFT_SHIFT)))
 
         Switch_cyr: Switch_cyr {
             compatible = "zmk,behavior-macro";
@@ -347,6 +348,8 @@ name: name##_mod_tap {                     \
         HOME_ROW_MOD_TAP(ht_alt, &eng_alt)
         HOME_ROW_MOD_TAP(ht_gui, &eng_gui)
         HOME_ROW_MOD_TAP(ht_ctl, &eng_ctl)
+        HOME_ROW_MOD_TAP(ht_hyper, &eng_hyper)
+        HOME_ROW_MOD_TAP(ht_meh, &eng_meh)
 
         Tap_hold: Tap_hold {
             compatible = "zmk,behavior-hold-tap";
@@ -495,8 +498,8 @@ name: name##_mod_tap {                     \
 
         cyr_main {
             bindings = <
-&kp ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
-&kp TAB    &Ru_f_macro 0 0  &Ru_y_macro 0 0  &ru_v  &ru_a      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro 0 0       &Ru_d_macro 0 0     &Ru_zh_macro  0 0   &kp SEMI
+&ht_hyper 0 ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
+&ht_meh 0 TAB    &Ru_f_macro 0 0  &Ru_y_macro 0 0  &ru_v  &ru_a      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro 0 0       &Ru_d_macro 0 0     &Ru_zh_macro  0 0   &kp SEMI
 &mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
@@ -504,8 +507,8 @@ name: name##_mod_tap {                     \
 
         cyr_xtra {
             bindings = <
-&Ru_hyper 0 ESCAPE      &ru_jo  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans       &ru_z  &ru_kh
-&Ru_meh 0 TAB       &Control_eng 0 0  &Option_eng 0 0  &Command_eng 0 0  &kp LEFT_SHIFT  &trans                                  &trans  &kp RIGHT_SHIFT  &Command_eng  0 0   &Option_eng 0 0      &Control_eng 0 0         &ru_e
+&ht_hyper 0 ESCAPE      &ru_jo  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans       &ru_z  &ru_kh
+&ht_meh 0 TAB       &Control_eng 0 0  &Option_eng 0 0  &Command_eng 0 0  &kp LEFT_SHIFT  &trans                                  &trans  &kp RIGHT_SHIFT  &Command_eng  0 0   &Option_eng 0 0      &Control_eng 0 0         &ru_e
 &trans  &trans  &trans  &trans  &trans  &trans  &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &ru_tz  &ru_b  &ru_ju  &trans          &trans
                              &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
