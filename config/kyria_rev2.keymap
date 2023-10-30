@@ -298,7 +298,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_f>; //&macro on hold, &ru_f on tap
+            bindings = <&Control_eng>, <&ru_f>; //&macro on hold, &ru_f on tap
         };
 
         Ru_y_macro: Ru_y_macro {
@@ -307,7 +307,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_y>; //&macro on hold, &ru_y on tap
+            bindings = <&Ooption_eng>, <&ru_y>; //&macro on hold, &ru_y on tap
         };
 
         Ru_v_macro: Ru_v_macro {
@@ -316,7 +316,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_v>; //&macro on hold, &ru_v on tap
+            bindings = <&Command_eng>, <&ru_v>; //&macro on hold, &ru_v on tap
         };
 
         Ru_a_hold: Ru_a_hold {
@@ -352,7 +352,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_l>; //&macro on hold, &ru_l on tap
+            bindings = <&Command_eng>, <&ru_l>; //&macro on hold, &ru_l on tap
         };
 
         Ru_d_macro: Ru_d_macro {
@@ -361,7 +361,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_d>; //&macro on hold, &ru_d on tap
+            bindings = <&Option_eng>, <&ru_d>; //&macro on hold, &ru_d on tap
         };
 
         Ru_zh_macro: Ru_zh_macro {
@@ -370,7 +370,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&macro>, <&ru_zh>; //&macro on hold, &ru_zh on tap
+            bindings = <&Control_eng>, <&ru_zh>; //&macro on hold, &ru_zh on tap
         };
      };
 
