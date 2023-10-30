@@ -381,7 +381,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
         cyr_main {
             bindings = <
 &Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
-&Tap_hold LA(LC(LEFT_SHIFT)) TAB    &Ru_f_macro  &Ru_y_macro  &Ru_v_macro  &ru_a      &ru_p                                                              &ru_r       &ru_o       &Ru_l_macro          &Ru_d_macro      &Ru_zh_macro     &kp SEMICOLON
+&Tap_hold LA(LC(LEFT_SHIFT)) TAB    &Ru_f_macro  &Ru_y_macro  &Ru_v_macro  &Ru_a_hold LEFT_SHIFT 0      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro          &Ru_d_macro      &Ru_zh_macro     &kp SEMICOLON
 &mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
@@ -435,7 +435,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
         typography {
             bindings = <
 &a_acute  &a_diaeresis  &e_circumflex  &i_grave  &o_acute  &u_acute                                  &c_cedilla  &trans  &trans  &trans        &trans    &trans
-&a_grave  &e_acute  &e_diaeresis      &i_circumflex  &o_grave  &u_grave                                        &n_tilde     &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
+&a_grave  &e_acute  &e_diaeresis      &i_circumflex  &O_grave_hold LEFT_SHIFT 0 &u_grave                                        &n_tilde     &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
 &a_circumflex  &e_grave  &i_acute      &i_diaeresis        &o_circumflex        &u_circumflex        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans     &trans     &trans     &trans            &trans          &trans
                             &kp LEFT  &kp RIGHT  &mo 7  &mo 6  &mo 3  &kp ENTER  &mo 4  &trans  &kp DOWN  &kp UP
             >;
