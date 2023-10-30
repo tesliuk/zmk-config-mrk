@@ -15,23 +15,23 @@
 ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
 ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
 ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
-ZMK_UNICODE_PAIR(ru_a,    N0, N4,  N3,  E,   N0, N4,  N2,  E) // а, А: U+0430, U+0410
-ZMK_UNICODE_PAIR(ru_b,    N0, N4,  N3,  F,   N0, N4,  N2,  F) // б, Б: U+0431, U+0411
-ZMK_UNICODE_PAIR(ru_v,    N0, N4,  N3,  N0,  N0, N4,  N2,  N0) // в, В: U+0432, U+0412
-ZMK_UNICODE_PAIR(ru_g,    N0, N4,  N3,  N1,  N0, N4,  N2,  N1) // г, Г: U+0433, U+0413
-ZMK_UNICODE_PAIR(ru_d,    N0, N4,  N3,  N2,  N0, N4,  N2,  N2) // д, Д: U+0434, U+0414
-ZMK_UNICODE_PAIR(ru_je,    N0, N4,  N3,  N5,  N0, N4,  N2,  N5) // е, Е: U+0435, U+0415
+ZMK_UNICODE_PAIR(ru_a,    N0, N4,  N3,  N0,   N0, N4,  N1,  N0) // а, А: U+0430, U+0410
+ZMK_UNICODE_PAIR(ru_b,    N0, N4,  N3,  N1,   N0, N4,  N1,  N1) // б, Б: U+0431, U+0411
+ZMK_UNICODE_PAIR(ru_v,    N0, N4,  N3,  N2,  N0, N4,  N1,  N2) // в, В: U+0432, U+0412
+ZMK_UNICODE_PAIR(ru_g,    N0, N4,  N3,  N3,  N0, N4,  N1,  N3) // г, Г: U+0433, U+0413
+ZMK_UNICODE_PAIR(ru_d,    N0, N4,  N3,  N4,  N0, N4,  N1,  N4) // д, Д: U+0434, U+0414
+ZMK_UNICODE_PAIR(ru_je,    N0, N4,  N3,  N5,  N0, N4,  N1,  N5) // е, Е: U+0435, U+0415
 ZMK_UNICODE_PAIR(ru_jo,   N0, N4,  N5,  N1,  N0, N4,  N0,  N1) // ё, Ё: U+0451, U+0401
-ZMK_UNICODE_PAIR(ru_zh,   N0, N4,  N3,  N6,  N0, N4,  N2,  N6) // ж, Ж: U+0436, U+0416
-ZMK_UNICODE_PAIR(ru_z,    N0, N4,  N3,  N7,  N0, N4,  N2,  N7) // з, З: U+0437, U+0417
-ZMK_UNICODE_PAIR(ru_i,    N0, N4,  N3,  N8,  N0, N4,  N2,  N8) // и, И: U+0438, U+0418
-ZMK_UNICODE_PAIR(ru_j,    N0, N4,  N3,  N9,  N0, N4,  N2,  N9) // й, Й: U+0439, U+0419
-ZMK_UNICODE_PAIR(ru_k,    N0, N4,  N3,  A,   N0, N4,  N2,  A) // к, К: U+043A, U+041A
-ZMK_UNICODE_PAIR(ru_l,    N0, N4,  N3,  B,   N0, N4,  N2,  B) // л, Л: U+043B, U+041B
-ZMK_UNICODE_PAIR(ru_m,    N0, N4,  N3,  C,   N0, N4,  N2,  C) // м, М: U+043C, U+041C
-ZMK_UNICODE_PAIR(ru_n,    N0, N4,  N3,  D,   N0, N4,  N2,  D) // н, Н: U+043D, U+041D
-ZMK_UNICODE_PAIR(ru_o,    N0, N4,  N3,  E,   N0, N4,  N2,  E) // о, О: U+043E, U+041E
-ZMK_UNICODE_PAIR(ru_p,    N0, N4,  N3,  F,   N0, N4,  N2,  F) // п, П: U+043F, U+041F
+ZMK_UNICODE_PAIR(ru_zh,   N0, N4,  N3,  N6,  N0, N4,  N1,  N6) // ж, Ж: U+0436, U+0416
+ZMK_UNICODE_PAIR(ru_z,    N0, N4,  N3,  N7,  N0, N4,  N1,  N7) // з, З: U+0437, U+0417
+ZMK_UNICODE_PAIR(ru_i,    N0, N4,  N3,  N8,  N0, N4,  N1,  N8) // и, И: U+0438, U+0418
+ZMK_UNICODE_PAIR(ru_j,    N0, N4,  N3,  N9,  N0, N4,  N1,  N9) // й, Й: U+0439, U+0419
+ZMK_UNICODE_PAIR(ru_k,    N0, N4,  N3,  A,   N0, N4,  N1,  A) // к, К: U+043A, U+041A
+ZMK_UNICODE_PAIR(ru_l,    N0, N4,  N3,  B,   N0, N4,  N1,  B) // л, Л: U+043B, U+041B
+ZMK_UNICODE_PAIR(ru_m,    N0, N4,  N3,  C,   N0, N4,  N1,  C) // м, М: U+043C, U+041C
+ZMK_UNICODE_PAIR(ru_n,    N0, N4,  N3,  D,   N0, N4,  N1,  D) // н, Н: U+043D, U+041D
+ZMK_UNICODE_PAIR(ru_o,    N0, N4,  N3,  E,   N0, N4,  N1,  E) // о, О: U+043E, U+041E
+ZMK_UNICODE_PAIR(ru_p,    N0, N4,  N3,  F,   N0, N4,  N!,  F) // п, П: U+043F, U+041F
 ZMK_UNICODE_PAIR(ru_r,    N0, N4,  N4,  N0,  N0, N4,  N2,  N0) // р, Р: U+0440, U+0420
 ZMK_UNICODE_PAIR(ru_s,    N0, N4,  N4,  N1,  N0, N4,  N2,  N1) // с, С: U+0441, U+0421
 ZMK_UNICODE_PAIR(ru_t,    N0, N4,  N4,  N2,  N0, N4,  N2,  N2) // т, Т: U+0442, U+0422
@@ -48,29 +48,29 @@ ZMK_UNICODE_PAIR(ru_mz,   N0, N4,  N4,  C,   N0, N4,  N2,  C) // ь, Ь: U+044C,
 ZMK_UNICODE_PAIR(ru_e,   N0, N4,  N4,  D,   N0, N4,  N2,  D) // э, Э: U+044D, U+042D
 ZMK_UNICODE_PAIR(ru_ju,   N0, N4,  N4,  E,   N0, N4,  N2,  E) // ю, Ю: U+044E, U+042E
 ZMK_UNICODE_PAIR(ru_ja,   N0, N4,  N4,  F,   N0, N4,  N2,  F) // я, Я: U+044F, U+042F
-ZMK_UNICODE_SINGLE(em_dash,        0x00, 0x00, 0x20, 0x14)  // —: U+2014
-ZMK_UNICODE_SINGLE(horizontal_bar, 0x00, 0x00, 0x20, 0x15)  // ―: U+2015
-ZMK_UNICODE_SINGLE(ellipsis,       0x00, 0x00, 0x20, 0x26)  // …: U+2026
-ZMK_UNICODE_SINGLE(pound,          0x00, 0x00, 0x00, 0xA3)  // £: U+00A3
-ZMK_UNICODE_SINGLE(dollar,         0x00, 0x00, 0x00, 0x24)  // $: U+0024
-ZMK_UNICODE_SINGLE(rouble,         0x00, 0x00, 0x20, 0xBD)  // ₽: U+20BD
-ZMK_UNICODE_SINGLE(euro,           0x00, 0x00, 0x20, 0xAC)  // €: U+20AC
-ZMK_UNICODE_SINGLE(leq,            0x00, 0x00, 0x22, 0x64)  // ≤: U+2264
-ZMK_UNICODE_SINGLE(geq,            0x00, 0x00, 0x22, 0x65)  // ≥: U+2265
-ZMK_UNICODE_SINGLE(approx,         0x00, 0x00, 0x22, 0x48)  // ≈: U+2248
-ZMK_UNICODE_SINGLE(times,          0x00, 0x00, 0x00, 0xD7)  // ×: U+00D7
-ZMK_UNICODE_SINGLE(ldquo,          0x00, 0x00, 0x20, 0x1E)  // „: U+201E
-ZMK_UNICODE_SINGLE(rdquo,          0x00, 0x00, 0x20, 0x1C)  // “: U+201C
-ZMK_UNICODE_SINGLE(laquo,          0x00, 0x00, 0x00, 0xAB)  // «: U+00AB
-ZMK_UNICODE_SINGLE(raquo,          0x00, 0x00, 0x00, 0xBB)  // »: U+00BB
-ZMK_UNICODE_SINGLE(bullet,         0x00, 0x00, 0x20, 0x22)  // •: U+2022
-ZMK_UNICODE_SINGLE(plusminus,      0x00, 0x00, 0x00, 0xB1)  // ±: U+00B1
-ZMK_UNICODE_SINGLE(degree,         0x00, 0x00, 0x00, 0xB0)  // °: U+00B0
-ZMK_UNICODE_SINGLE(div,            0x00, 0x00, 0x00, 0xF7)  // ÷: U+00F7
-ZMK_UNICODE_SINGLE(neq,            0x00, 0x00, 0x22, 0x60)  // ≠: U+2260
-ZMK_UNICODE_SINGLE(copy,           0x00, 0x00, 0x00, 0xA9)  // ©: U+00A9
-ZMK_UNICODE_SINGLE(trade,          0x00, 0x00, 0x21, 0x22)  // ™: U+2122
-ZMK_UNICODE_SINGLE(inverted_question_mark, 0x00, 0x00, 0x00, 0xBF)  // ¿: U+00BF
+ZMK_UNICODE_SINGLE(em_dash,        N2, N0, N1, N4)  // —: U+2014
+ZMK_UNICODE_SINGLE(horizontal_bar, N2, N0, N1, N5)  // ―: U+2015
+ZMK_UNICODE_SINGLE(ellipsis,       N2, N0, N2, N6)  // …: U+2026
+ZMK_UNICODE_SINGLE(pound,          N0, N0, A, N3)  // £: U+00A3
+ZMK_UNICODE_SINGLE(dollar,         N0, N0, N2, N4)  // $: U+0024
+ZMK_UNICODE_SINGLE(rouble,         N2, N0, B, D)  // ₽: U+20BD
+ZMK_UNICODE_SINGLE(euro,           N2, N0, A, C)  // €: U+20AC
+ZMK_UNICODE_SINGLE(leq,            N2, N2, N6, N4)  // ≤: U+2264
+ZMK_UNICODE_SINGLE(geq,            N2, N2, N6, N5)  // ≥: U+2265
+ZMK_UNICODE_SINGLE(approx,         N2, N2, N4, N8)  // ≈: U+2248
+ZMK_UNICODE_SINGLE(times,          N0, N0, D, N7)  // ×: U+00D7
+ZMK_UNICODE_SINGLE(ldquo,          N2, N0, N1, E)  // „: U+201E
+ZMK_UNICODE_SINGLE(rdquo,          N2, N0, N1, C)  // “: U+201C
+ZMK_UNICODE_SINGLE(laquo,          N0, N0, A, B)  // «: U+00AB
+ZMK_UNICODE_SINGLE(raquo,          N0, N0, B, B)  // »: U+00BB
+ZMK_UNICODE_SINGLE(bullet,         N2, N0, N2, N2)  // •: U+2022
+ZMK_UNICODE_SINGLE(plusminus,      N0, N0, B, N1)  // ±: U+00B1
+ZMK_UNICODE_SINGLE(degree,         N0, N0, B, N0)  // °: U+00B0
+ZMK_UNICODE_SINGLE(div,            N0, N0, F, N7)  // ÷: U+00F7
+ZMK_UNICODE_SINGLE(neq,            N2, N2, N6, N0)  // ≠: U+2260
+ZMK_UNICODE_SINGLE(copy,           N0, N0, A, N9)  // ©: U+00A9
+ZMK_UNICODE_SINGLE(trade,          N2, N2, N2, N2)  // ™: U+2122
+ZMK_UNICODE_SINGLE(inverted_question_mark, N0, N0, B, F)  // ¿: U+00BF
 ZMK_UNICODE_PAIR(a_acute,      N0, N0,  E,  N1,   N0, N0,  C,  N1) // á, Á: U+00E1, U+00C1
 ZMK_UNICODE_PAIR(e_acute,      N0, N0,  E,  N9,   N0, N0,  C,  N9) // é, É: U+00E9, U+00C9
 ZMK_UNICODE_PAIR(i_acute,      N0, N0,  E,  D,   N0, N0,  C,  D) // í, Í: U+00ED, U+00CD
