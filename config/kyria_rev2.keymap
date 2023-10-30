@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -408,7 +409,7 @@ name: name##_mod_tap {                     \
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&Control_eng>, <&ru_f>; //&macro on hold, &ru_f on tap
+            bindings = <&eng_ctl>, <&ru_f>; //&macro on hold, &ru_f on tap
         };
 
         Ru_y_macro: Ru_y_macro {
@@ -426,7 +427,7 @@ name: name##_mod_tap {                     \
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&Command_eng>, <&ru_v>; //&macro on hold, &ru_v on tap
+            bindings = <&eng_gui>, <&ru_v>; //&macro on hold, &ru_v on tap
         };
 
         Ru_a_hold: Ru_a_hold {
@@ -462,7 +463,7 @@ name: name##_mod_tap {                     \
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&Command_eng>, <&ru_l>; //&macro on hold, &ru_l on tap
+            bindings = <&eng_gui>, <&ru_l>; //&macro on hold, &ru_l on tap
         };
 
         Ru_d_macro: Ru_d_macro {
@@ -499,7 +500,7 @@ name: name##_mod_tap {                     \
         cyr_main {
             bindings = <
 &ht_hyper 0 ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
-&ht_meh 0 TAB    &Ru_f_macro 0 0  &Ru_y_macro 0 0  &ru_v  &ru_a      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro 0 0       &Ru_d_macro 0 0     &Ru_zh_macro  0 0   &kp SEMI
+&ht_meh 0 TAB    &Ru_f_macro 0 0  &Ru_y_macro 0 0  &Ru_v_macro 0 0  &ru_a      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro 0 0       &Ru_d_macro 0 0     &Ru_zh_macro  0 0   &kp SEMI
 &mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
