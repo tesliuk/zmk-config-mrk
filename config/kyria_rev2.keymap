@@ -229,6 +229,46 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
                 , <&macro_release &mo 0>
                 ;
         };
+
+
+        Hyper_eng: Hyper_eng {
+            label = "HYPER_ENG";
+            compatible = "zmk,behavior-macro-two-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_press &mo 0>
+                , <&macro_param_2to1>
+                , <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>
+                , <&macro_pause_for_release>
+                , <&macro_param_2to1>
+                , <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>
+                , <&macro_param_1to1>
+                , <&macro_release &mo 0>
+                ;
+        };
+
+        Meh_eng: Meh_eng {
+            label = "Meh_ENG";
+            compatible = "zmk,behavior-macro-two-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_press &mo 0>
+                , <&macro_param_2to1>
+                , <&macro_press &kp LA(LC(LEFT_SHIFT))>
+                , <&macro_pause_for_release>
+                , <&macro_param_2to1>
+                , <&macro_release &kp LA(LC(LEFT_SHIFT))>
+                , <&macro_param_1to1>
+                , <&macro_release &mo 0>
+                ;
+        };
+
         Switch_eng: Switch_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -286,6 +326,26 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+        };
+
+
+        Ru_hyper: Ru_hyper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_HYPER";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&Hyper_eng>, <&kp>; //&macro on hold, &kp on tap
+        };
+
+
+        Ru_meh: Ru_meh {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_MEH";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&Meh_eng>, <&kp>; //&macro on hold, &kp on tap
         };
 
         Ru_f_macro: Ru_f_macro {
@@ -377,25 +437,25 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp COLON
 &Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &kp SEMI
-&kp TILDE                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
+&kp TILDE                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
         cyr_main {
             bindings = <
-&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
-&Tap_hold LA(LC(LEFT_SHIFT)) TAB    &Ru_f_macro  &Ru_y_macro  &Ru_v_macro  &Ru_a_hold LEFT_SHIFT 0      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro          &Ru_d_macro      &Ru_zh_macro     &kp SEMICOLON
-&mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
+&Ru_hyper 0 ESCAPE  &ru_j  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &kp COLON
+&Ru_meh 0 TAB    &Ru_f_macro  &Ru_y_macro  &Ru_v_macro  &Ru_a_hold LEFT_SHIFT 0      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro          &Ru_d_macro      &Ru_zh_macro     &kp SEMICOLON
+&mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
 
         cyr_xtra {
             bindings = <
-&trans      &ru_jo  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans       &ru_z  &ru_kh
-&trans       &Control_eng  &Option_eng  &Command_eng  &kp LEFT_SHIFT  &trans                                  &trans  &kp RIGHT_SHIFT  &Command_eng     &Option_eng      &Control_eng          &ru_e
-&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &ru_tz  &ru_b  &ru_ju  &trans          &trans
+&Ru_hyper 0 ESCAPE      &ru_jo  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans     &trans       &ru_z  &ru_kh
+&Ru_meh 0 TAB       &Control_eng  &Option_eng  &Command_eng  &kp LEFT_SHIFT  &trans                                  &trans  &kp RIGHT_SHIFT  &Command_eng     &Option_eng      &Control_eng          &ru_e
+&trans  &trans  &trans  &trans  &trans  &trans  &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &ru_tz  &ru_b  &ru_ju  &trans          &trans
                              &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
@@ -404,7 +464,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &times   &kp KP_MINUS  &kp N7  &kp N8  &kp N9            &kp KP_PLUS                                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT  &kp GT  &kp APOS      &kp COLON
 &div      &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6            &kp KP_DIVIDE                                                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &leq          &geq           &kp UNDER      &kp SEMICOLON
-&approx  &kp KP_EQUAL       &kp N1  &kp N2  &kp N3            &kp N0     &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL         &kp LEFT_BRACE         &kp RIGHT_BRACE       &kp COMMA       &kp PERIOD       &kp BACKSLASH  &kp QUESTION
+&approx  &kp KP_EQUAL       &kp N1  &kp N2  &kp N3            &kp N0     &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL         &kp LEFT_BRACE         &kp RIGHT_BRACE       &kp COMMA       &kp PERIOD       &kp BACKSLASH  &kp QUESTION
                                    &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &trans  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
@@ -413,7 +473,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &kp LA(LC(LS(N2)))  &kp LA(LC(LS(N3)))  &kp LA(LC(LS(LEFT)))  &kp LA(LC(LS(RIGHT))) &kp LA(LC(LS(UP)))            &kp LEFT_ALT                                                             &kp LEFT  &kp DOWN    &kp UP          &kp RIGHT        &kp LA(LC(LS(N2)))     &kp LA(LC(LS(N3)))
 &kp LA(LC(LS(N1)))                                    &kp LA(LC(LS(N4)))  &trans  &trans  &kp LA(LC(LS(DOWN)))            &kp LEFT_GUI                                                             &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LA(LC(LS(N1)))  &kp LA(LC(LS(N4)))
-&kp LA(LC(LS(N9)))                               &trans  &trans  &trans  &trans            &kp LS(LGUI)        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &trans   &trans   &trans   &trans    &kp LA(LC(LS(N9)))
+&kp LA(LC(LS(N9)))                               &trans  &trans  &trans  &trans            &kp LS(LGUI)        &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans  &trans   &trans   &trans   &trans    &kp LA(LC(LS(N9)))
                                                           &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &trans  &kp ENTER  &trans  &mo 6  &kp DOWN  &kp UP
             >;
         };
@@ -422,7 +482,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &euro      &approx  &kp AMPERSAND   &kp KP_MULTIPLY  &kp UNDER  &kp BACKSLASH                                  &ldquo      &rdquo      &em_dash  &ellipsis  &copy    &trans &rouble
 &kp GRAVE  &dollar  &kp PERCENT  &kp CARET  &kp FSLH            &laquo                                             &raquo      &horizontal_bar      &degree     &trade          &trans  &pound
-&kp TILDE      &kp EXCL  &kp AT     &kp POUND  &kp PIPE    &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL        &kp LPAR             &kp RPAR &plusminus  &bullet  &neq  &inverted_question_mark
+&kp TILDE      &kp EXCL  &kp AT     &kp POUND  &kp PIPE    &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL        &kp LPAR             &kp RPAR &plusminus  &bullet  &neq  &inverted_question_mark
 &kp LEFT  &kp RIGHT  &mo 7  &trans  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
             >;
         };
@@ -431,7 +491,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &trans  &kp F12  &kp F7  &kp F8  &kp F9 &kp LG(S)                                 &kp LG(C)  &kp LG(V)  &kp LG(X)  &kp K_MUTE        &kp C_VOL_UP    &kp C_VOL_DN
 &trans  &kp F11  &kp F4      &kp F5  &kp F6  &kp LG(T)                            &kp LG(Z)     &kp LG(Y)  &trans  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT
-&kp LG(COMMA)  &kp F10  &kp F1      &kp F2        &kp F3   &kp LG(N)        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &kp LG(W)     &kp LG(Q)     &trans     &trans            &kp C_BRI_UP          &kp C_BRI_DN
+&kp LG(COMMA)  &kp F10  &kp F1      &kp F2        &kp F3   &kp LG(N)        &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &kp LG(W)     &kp LG(Q)     &trans     &trans            &kp C_BRI_UP          &kp C_BRI_DN
                             &kp LEFT  &kp RIGHT  &mo 7  &mo 6  &mo 3  &kp ENTER  &mo 4  &trans  &kp DOWN  &kp UP
             >;
         };
@@ -440,7 +500,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             bindings = <
 &a_acute  &a_diaeresis  &e_circumflex  &i_grave  &o_acute  &u_acute                                  &c_cedilla  &trans  &trans  &trans        &trans    &trans
 &a_grave  &e_acute  &e_diaeresis      &i_circumflex  &O_grave_hold LEFT_SHIFT 0 &u_grave                                        &n_tilde     &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
-&a_circumflex  &e_grave  &i_acute      &i_diaeresis        &o_circumflex        &u_circumflex        &kp SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans     &trans     &trans     &trans            &trans          &trans
+&a_circumflex  &e_grave  &i_acute      &i_diaeresis        &o_circumflex        &u_circumflex        &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL  &trans     &trans     &trans     &trans            &trans          &trans
                             &kp LEFT  &kp RIGHT  &mo 7  &mo 6  &mo 3  &kp ENTER  &mo 4  &trans  &kp DOWN  &kp UP
             >;
         };
