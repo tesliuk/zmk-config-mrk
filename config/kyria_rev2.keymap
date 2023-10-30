@@ -93,6 +93,31 @@ ZMK_UNICODE_PAIR(a_diaeresis,  N0, N0,  E,  N4,   N0, N0,  C,  N4) // ä, Ä: U+
 ZMK_UNICODE_PAIR(e_diaeresis,  N0, N0,  E,  B,   N0, N0,  C,  B) // ë, Ë: U+00EB, U+00CB
 ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00EF, U+00CF
 
+
+#define ENG_MOD_MACRO(name, mod)            \
+name: name##_macro {                           \
+	label = #name;                             \
+	compatible = "zmk,behavior-macro";         \
+	#binding-cells = <0>;                      \
+	wait-ms = <0>;                             \
+    bindings                                   \
+        = <&macro_press &mo 0 &kp mod>    \
+        , <&macro_pause_for_release>           \
+        , <&macro_release &mo 0 &kp mod>; \
+};
+
+#define HOME_ROW_MOD_TAP(name, macro)      \
+name: name##_mod_tap {                     \
+    label = #name;                         \
+    compatible = "zmk,behavior-hold-tap";  \
+    #binding-cells = <2>;                  \
+    flavor = "balanced";                   \
+    tapping-term-ms = <200>;               \
+    quick-tap-ms = <150>;                  \
+    global-quick-tap;                      \
+    bindings = <macro>, <&kp>;             \
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -174,6 +199,13 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
             label = "SWITCH_CYR";
         };
+        {
+        ENG_MOD_MACRO(eng_alt, LALT)
+        ENG_MOD_MACRO(eng_gui, LGUI)
+        ENG_MOD_MACRO(eng_ctl, LCTRL)
+        ENG_MOD_MACRO(eng_hyper, LA(LC(LG(LEFT_SHIFT))))
+        };
+
         Command_eng: Command_eng {
             label = "COMMAND_ENG";
             compatible = "zmk,behavior-macro-two-param";
@@ -321,6 +353,22 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        {
+        HOME_ROW_MOD_TAP(ht_alt, &eng_alt)
+        HOME_ROW_MOD_TAP(ht_gui, &eng_gui)
+        HOME_ROW_MOD_TAP(ht_ctl, &eng_ctl)
+        qht: quick_hold_tap {
+            label = "quick_hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <130>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+
         Tap_layer: Tap_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_LAYER";
