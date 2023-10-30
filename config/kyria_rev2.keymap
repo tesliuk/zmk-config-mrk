@@ -435,7 +435,8 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
 
         base {
             bindings = <
-&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                        &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp COLON
+//&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp Q  &kp W  &kp F  &kp P  &kp B
+&ru_n  &ru_v  &ru_a  &ru_r  &ru_t  &ru_ s &kp J    &kp L      &kp U      &kp Y    &kp APOS  &kp COLON
 &Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &kp SEMI
 &kp TILDE                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
