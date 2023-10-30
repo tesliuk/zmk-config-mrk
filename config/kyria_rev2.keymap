@@ -31,7 +31,7 @@ ZMK_UNICODE_PAIR(ru_l,    N0, N4,  N3,  B,   N0, N4,  N1,  B) // л, Л: U+043B,
 ZMK_UNICODE_PAIR(ru_m,    N0, N4,  N3,  C,   N0, N4,  N1,  C) // м, М: U+043C, U+041C
 ZMK_UNICODE_PAIR(ru_n,    N0, N4,  N3,  D,   N0, N4,  N1,  D) // н, Н: U+043D, U+041D
 ZMK_UNICODE_PAIR(ru_o,    N0, N4,  N3,  E,   N0, N4,  N1,  E) // о, О: U+043E, U+041E
-ZMK_UNICODE_PAIR(ru_p,    N0, N4,  N3,  F,   N0, N4,  N!,  F) // п, П: U+043F, U+041F
+ZMK_UNICODE_PAIR(ru_p,    N0, N4,  N3,  F,   N0, N4,  N1,  F) // п, П: U+043F, U+041F
 ZMK_UNICODE_PAIR(ru_r,    N0, N4,  N4,  N0,  N0, N4,  N2,  N0) // р, Р: U+0440, U+0420
 ZMK_UNICODE_PAIR(ru_s,    N0, N4,  N4,  N1,  N0, N4,  N2,  N1) // с, С: U+0441, U+0421
 ZMK_UNICODE_PAIR(ru_t,    N0, N4,  N4,  N2,  N0, N4,  N2,  N2) // т, Т: U+0442, U+0422
