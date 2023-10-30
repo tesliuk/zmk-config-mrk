@@ -299,7 +299,7 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             #bindings-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&Ooption_eng>, <&ru_y>; //&macro on hold, &ru_y on tap
+            bindings = <&Option_eng>, <&ru_y>; //&macro on hold, &ru_y on tap
         };
 
         Ru_v_macro: Ru_v_macro {
