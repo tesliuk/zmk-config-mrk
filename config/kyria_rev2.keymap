@@ -283,14 +283,6 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
-        Tap_macro: Tap_macro {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_MACRO";
-            #bindings-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&macro>, <&kp>; //&macro on hold, &kp on tap
-        };
 
         Ru_f_macro: Ru_f_macro {
             compatible = "zmk,behavior-hold-tap";
