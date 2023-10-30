@@ -344,6 +344,10 @@ name: name##_mod_tap {                     \
     };
 
     behaviors {
+        HOME_ROW_MOD_TAP(ht_alt, &eng_alt)
+        HOME_ROW_MOD_TAP(ht_gui, &eng_gui)
+        HOME_ROW_MOD_TAP(ht_ctl, &eng_ctl)
+
         Tap_hold: Tap_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_HOLD";
@@ -354,10 +358,6 @@ name: name##_mod_tap {                     \
             flavor = "balanced";
         };
 
-        {
-        HOME_ROW_MOD_TAP(ht_alt, &eng_alt)
-        HOME_ROW_MOD_TAP(ht_gui, &eng_gui)
-        HOME_ROW_MOD_TAP(ht_ctl, &eng_ctl)
         qht: quick_hold_tap {
             label = "quick_hold_tap";
             compatible = "zmk,behavior-hold-tap";
