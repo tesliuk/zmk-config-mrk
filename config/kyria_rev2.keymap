@@ -290,7 +290,88 @@ ZMK_UNICODE_PAIR(i_diaeresis,  N0, N0,  E,  F,   N0, N0,  C,  F) // ï, Ï: U+00
             flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&macro>, <&kp>; //&macro on hold, &kp on tap
-        );
+        };
+
+        Ru_f_macro: Ru_f_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_F_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_f>; //&macro on hold, &ru_f on tap
+        };
+
+        Ru_y_macro: Ru_y_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_Y_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_y>; //&macro on hold, &ru_y on tap
+        };
+
+        Ru_v_macro: Ru_v_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_V_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_v>; //&macro on hold, &ru_v on tap
+        };
+
+        Ru_a_hold: Ru_a_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_A_HOLD";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&ru_a>; //&kp on hold, &ru_a on tap
+        };
+
+        Ru_o_hold: Ru_o_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_O_HOLD";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&ru_o>; //&kp on hold, &ru_o on tap
+        };
+
+        O_grave_hold: O_grave_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "O_GRAVE_HOLD";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&o_grave>; //&kp on hold, &o_grave on tap
+        };
+
+        Ru_l_macro: Ru_l_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_L_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_l>; //&macro on hold, &ru_l on tap
+        };
+
+        Ru_d_macro: Ru_d_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_D_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_d>; //&macro on hold, &ru_d on tap
+        };
+
+        Ru_zh_macro: Ru_zh_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_ZH_MACRO";
+            #bindings-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&macro>, <&ru_zh>; //&macro on hold, &ru_zh on tap
+        };
      };
 
     keymap {
