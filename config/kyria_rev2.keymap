@@ -372,7 +372,7 @@ name: name##_mod_tap {                     \
                 <&macro_tap>,
                 <&kp N8>,
                 <&macro_release>,
-                <&kp LA(LCLG((LEFT_SHIFT)))>,
+                <&kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_wait_time 10>,
                 // move to layer base
                 <&to 1>;
