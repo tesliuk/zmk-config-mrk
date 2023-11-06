@@ -362,9 +362,7 @@ name: name##_mod_tap {                     \
 
             label = "MOVE_CYR";
         };
-        }
 
-        )
     };
 
     behaviors {
