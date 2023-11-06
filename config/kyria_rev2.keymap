@@ -356,11 +356,10 @@ name: name##_mod_tap {                     \
                 <&kp N9>,
                 <&macro_release>,
                 <&kp LA(LC(LG(LEFT_SHIFT)))>,
-                // wait for 10ms only
-                <&macro_pause_for_release>,
+                <&macro_wait_time 10>,
                 // move to layer base
                 <&to 0>;
-                
+
             label = "MOVE_CYR";
         };
         }
