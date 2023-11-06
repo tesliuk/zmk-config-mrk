@@ -376,6 +376,7 @@ name: name##_mod_tap {                     \
                 <&macro_wait_time 10>,
                 // move to layer base
                 <&to 1>;
+            label = "SWITCH_ENG";
 
     };
 
