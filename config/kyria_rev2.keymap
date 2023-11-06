@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-//  Test pulling
+//  Test pulling another one comment
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
