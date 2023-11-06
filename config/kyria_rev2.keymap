@@ -206,7 +206,7 @@ name: name##_mod_tap {                     \
         //         <&to 1>;
 
         //     label = "SWITCH_CYR";
-        // };
+        };
 
 
         Command_eng: Command_eng {
