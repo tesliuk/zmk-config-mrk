@@ -352,7 +352,8 @@ name: name##_mod_tap {                     \
             bindings =
 
                 <&macro_tap>,
-                <&kp LA(LC(LG(LEFT_SHIFT(N9))))>,
+                <&kp N9>, 
+                // LA(LC(LG(LEFT_SHIFT(N9))))>,
 
                 <&macro_wait_time 10>,
                 // move to layer base
@@ -366,7 +367,8 @@ name: name##_mod_tap {                     \
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LC(LG(LEFT_SHIFT(N8))))>,
+                <&kp N8>, 
+                // LA(LC(LG(LEFT_SHIFT(N8))))>,
 
                 <&macro_wait_time 10>,
                 // move to layer base
