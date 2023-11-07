@@ -358,7 +358,7 @@ name: name##_mod_tap {                     \
                 <&kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_wait_time 10>,
                 // move to layer base
-                <&to 0>;
+                <&to 1>;
 
             label = "SWITCH_CYR";
         };
@@ -375,7 +375,7 @@ name: name##_mod_tap {                     \
                 <&kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_wait_time 10>,
                 // move to layer base
-                <&to 1>;
+                <&to 0>;
             label = "SWITCH_ENG";
 
     };
