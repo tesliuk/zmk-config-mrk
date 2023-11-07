@@ -345,6 +345,36 @@ name: name##_mod_tap {                     \
             label = "CHANGE_LANG";
         };
 
+
+        Switch_cyr2: Switch_cyr2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+
+                <&macro_tap>,
+                <&kp LA(LC(LG(LEFT_SHIFT(N9))))>,
+
+                <&macro_wait_time 10>,
+                // move to layer base
+                <&to 1>;
+
+            label = "SWITCH_CYR2";
+        };
+
+        Switch_eng2: Switch_eng2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LA(LC(LG(LEFT_SHIFT(N8))))>,
+
+                <&macro_wait_time 10>,
+                // move to layer base
+                <&to 0>;
+            label = "SWITCH_ENG2";
+
+    };
+
         Switch_cyr: Switch_cyr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -379,6 +409,19 @@ name: name##_mod_tap {                     \
             label = "SWITCH_ENG";
 
     };
+
+// Example from QMK
+            // case LANG2EN:
+            // if (record->event.pressed) {
+            //     // Switch to _BASE layer
+            //     layer_move(_BASE);
+            //     tap_code(KC_F14);
+            //     // Send the keystroke for language switch
+            //     tap_code16(LSFT(LGUI(LALT(LCTL(KC_8)))));
+            //     // Small delay to ensure the OS registers the key press
+            //     wait_ms(10);
+            // }
+            // return false; // Skip all further processing of this key
 
     behaviors {
         HOME_ROW_MOD_TAP(ht_alt, &eng_alt)
@@ -525,7 +568,7 @@ name: name##_mod_tap {                     \
 
         base {
             bindings = <
-&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp L  &kp W  &kp F  &kp P  &kp B     &kp J    &kp L      &kp U      &kp Y    &kp APOS  &Switch_cyr
+&Tap_hold LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp L  &kp W  &kp F  &kp P  &kp B     &kp J    &kp L      &kp U      &kp Y    &Switch_cyr2  &Switch_cyr
 &Tap_hold LA(LC(LEFT_SHIFT)) TAB        &Tap_hold LEFT_CONTROL A  &Tap_hold LEFT_ALT R  &Tap_hold LEFT_GUI S  &Tap_hold LEFT_SHIFT T  &kp G                                                                                        &kp M    &Tap_hold RIGHT_SHIFT N      &Tap_hold RIGHT_GUI E      &Tap_hold RIGHT_ALT I    &Tap_hold RIGHT_CONTROL O     &kp SEMI
 &kp TILDE                               &kp Z  &kp X  &kp C  &kp D                                     &kp V                     &mt LA(LC(LG(LEFT_SHIFT))) SPACE  &kp LSHFT  &kp BSPC      &kp DEL     &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
@@ -534,7 +577,7 @@ name: name##_mod_tap {                     \
 
         cyr_main {
             bindings = <
-&ht_hyper 0 ESCAPE  &kp G  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &kp DOUBLE_QUOTES  &Switch_eng
+&ht_hyper 0 ESCAPE  &kp G  &ru_ts  &ru_u  &ru_k      &ru_je                                                                         &ru_n       &ru_g       &ru_sh          &ru_sch      &Switch_eng2  &Switch_eng
 &ht_meh 0 TAB    &Ru_f_macro 0 0  &Ru_y_macro 0 0  &Ru_v_macro 0 0  &ru_a      &ru_p                                                              &ru_r       &Ru_o_hold RIGHT_SHIFT 0      &Ru_l_macro 0 0       &Ru_d_macro 0 0     &Ru_zh_macro  0 0   &kp SEMI
 &mo 2 &ru_ja  &ru_ch  &ru_s  &ru_m      &ru_i             &Ru_hyper 0 SPACE  &kp LSHFT  &kp BSPC      &kp DEL          &ru_t       &ru_mz       &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
                                                         &kp LEFT  &kp RIGHT  &mo 7  &mo 5  &mo 3  &kp ENTER  &mo 4  &mo 6  &kp DOWN  &kp UP
