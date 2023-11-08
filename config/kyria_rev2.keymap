@@ -363,11 +363,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _cyr_xtra {
             bindings = <
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &kp GRAVE &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &kp P &kp LBKT
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &kp APOS
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &kp RBKT &kp COMMA &kp DOT &trans &trans 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
