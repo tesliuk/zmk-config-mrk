@@ -38,7 +38,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             bindings 
                 = <&to 0>,
                 // <&macro_wait 10>,
-                <&macro_oress &kp LA(LC(LG(LEFT_SHIFT)))>,
+                <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_tap &kp N8>,
                 <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
@@ -50,7 +50,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             bindings 
                 = <&to 1>,
                 // <&macro_wait 10>,
-                <&macro_oress &kp LA(LC(LG(LEFT_SHIFT)))>,
+                <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_tap &kp N9>,
                 <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
