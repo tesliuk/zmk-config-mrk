@@ -343,7 +343,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
                 <&macro_tap &kp F21>,
                 <&macro_pause_for_release>,
                 <&to 0>,
-                <&macro_tap &kp LA(LC(LG(LS(N8))))>
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>,
                 <&macro_tap F14>;
 
         };
