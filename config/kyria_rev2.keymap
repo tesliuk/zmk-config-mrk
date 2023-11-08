@@ -34,26 +34,26 @@ ZMK_BEHAVIOR(msc, hold_tap,
     bindings = <&mo_symb_cyr>, <&kp>;
 )
 
-// ZMK_BEHAVIOR(mnc, hold_tap,
-//     flavor = "balanced";
-//     tapping-term-ms = <280>;
-//     quick-tap-ms = <125>;
-//     bindings = <&mo_num_cyr>, <&kp>;
-// )
+ZMK_BEHAVIOR(mnc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_num_cyr>, <&kp>;
+)
 
-// ZMK_BEHAVIOR(mfc, hold_tap,
-//     flavor = "balanced";
-//     tapping-term-ms = <280>;
-//     quick-tap-ms = <125>;
-//     bindings = <&mo_func_cyr>, <&kp>;
-// )
+ZMK_BEHAVIOR(mfc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_func_cyr>, <&kp>;
+)
 
-// ZMK_BEHAVIOR(mtc, hold_tap,
-//     flavor = "balanced";
-//     tapping-term-ms = <280>;
-//     quick-tap-ms = <125>;
-//     bindings = <&mo_typo_cyr>, <&kp>;
-// )
+ZMK_BEHAVIOR(mtc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_typo_cyr>, <&kp>;
+)
 
 ZMK_BEHAVIOR(altr, hold_tap,
     flavor = "balanced";
@@ -356,7 +356,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             // bottom main line
             &trans &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr 0 SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &punct_cyr QUESTION 
             // bottom thumb cluster line
-            &trans &trans &msc 0 LG(V) &msc 0 LG(C) &msc 0 MINUS /* middle */ &trans &lt 4 LPAR &msc 0 RPAR &trans &trans           
+            &trans &trans &mtc 0 LG(V) &msc 0 LG(C) &mnc 0 MINUS /* middle */ &trans &lt 4 LPAR &mfc 0 RPAR &trans &trans           
             >;
         };
 
