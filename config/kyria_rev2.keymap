@@ -484,7 +484,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _symbol {
             bindings = <
             // top line 
-            &ellipsis &euro &kp AMPERSAND &kp KP_MULTIPLY &kp PLUS &kp EQUAL /* middle */ &ldquo &rdquo &kp DQT &checkmark &BSLH &em_dash
+            &ellipsis &euro &kp AMPERSAND &kp KP_MULTIPLY &kp PLUS &kp EQUAL  /* middle */ &ldquo &rdquo &kp DQT &checkmark &BSLH &em_dash
             // second line 
             &kp GRAVE &yen &kp DOLLAR &kp PERCENT &kp CARET &kp approx /* middle */ &laquo &raguo &minidot &degree &FSLH &horizontal_bar
             // bottom main line
