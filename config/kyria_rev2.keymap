@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 
+#define HOST_OS 2
 
 #define BASE 0
 #define CYRMAIN 1
@@ -19,6 +20,30 @@
 #define FUNCTION 6
 #define TYPOGRAPHY 7
 #define BLUETOOTH 8
+
+ZMK_UNICODE_SINGLE(em_dash,        N2, N0, N1, N4)  // —: U+2014
+ZMK_UNICODE_SINGLE(horizontal_bar, N2, N0, N1, N5)  // ―: U+2015
+ZMK_UNICODE_SINGLE(ellipsis,       N2, N0, N2, N6)  // …: U+2026
+// ZMK_UNICODE_SINGLE(pound,          N0, N0, A, N3)  // £: U+00A3
+// ZMK_UNICODE_SINGLE(dollar,         N0, N0, N2, N4)  // $: U+0024
+// ZMK_UNICODE_SINGLE(rouble,         N2, N0, B, D)  // ₽: U+20BD
+ZMK_UNICODE_SINGLE(euro,           N2, N0, A, C)  // €: U+20AC
+ZMK_UNICODE_SINGLE(leq,            N2, N2, N6, N4)  // ≤: U+2264
+ZMK_UNICODE_SINGLE(geq,            N2, N2, N6, N5)  // ≥: U+2265
+ZMK_UNICODE_SINGLE(approx,         N2, N2, N4, N8)  // ≈: U+2248
+ZMK_UNICODE_SINGLE(times,          N0, N0, D, N7)  // ×: U+00D7
+// ZMK_UNICODE_SINGLE(ldquo,          N2, N0, N1, E)  // „: U+201E
+// ZMK_UNICODE_SINGLE(rdquo,          N2, N0, N1, C)  // “: U+201C
+// ZMK_UNICODE_SINGLE(laquo,          N0, N0, A, B)  // «: U+00AB
+// ZMK_UNICODE_SINGLE(raquo,          N0, N0, B, B)  // »: U+00BB
+// ZMK_UNICODE_SINGLE(bullet,         N2, N0, N2, N2)  // •: U+2022
+// ZMK_UNICODE_SINGLE(plusminus,      N0, N0, B, N1)  // ±: U+00B1
+// ZMK_UNICODE_SINGLE(degree,         N0, N0, B, N0)  // °: U+00B0
+ZMK_UNICODE_SINGLE(div,            N0, N0, F, N7)  // ÷: U+00F7
+ZMK_UNICODE_SINGLE(neq,            N2, N2, N6, N0)  // ≠: U+2260
+// ZMK_UNICODE_SINGLE(copy,           N0, N0, A, N9)  // ©: U+00A9
+// ZMK_UNICODE_SINGLE(trade,          N2, N2, N2, N2)  // ™: U+2122
+ZMK_UNICODE_SINGLE(inverted_question_mark, N0, N0, B, F)  // ¿: U+00BF
 
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
@@ -376,11 +401,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _num {
             bindings = <
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &times &kp MINUS &kp N7 &kp N8 &kp N9 &kp PLUS /* middle */ &kp LPAR &kp RPAR &kp LT &kp GT &kp APOS &kp COLON
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &div &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp FSLH  /* middle */ &kp LBKT &kp RBKT &leq &geq &kp UNDER &kp SEMI
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &neq &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N0 /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp LBRC &kp RBRC &kp COMMA &kp DOT &kp BSLH &kp QUESTION 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
@@ -389,11 +414,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _navi {
             bindings = <
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &kp LA(LC(LS(N2))) &kp LA(LC(LS(N3))) &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(RIGHT)))) &kp LA(LSHIFT) &kp LALT /* middle */ &kp LEFT &kp RIGHT &kp DOWN &kp UP &kp LA(LC(LS(N2))) &kp LA(LC(LS(N3)))
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4))) &kp LA(LC(LG(LS(DN))))  &kp LA(LC(LG(LS(UP)))) &kp LS(LGUI) &kp LGUI /* middle */ &kp PAGE_DOWN &kp PAGE_UP &kp END &kp HOME &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4)))
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &kp LA(LC(LS(N9))) &trans &trans &trans &kp LG(PLUS) &kp LG(MINUS) /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp LA(LEFT) &kp LA(RIGHT) &kp LA(DOWN) &kp LA(UP) &trans &kp LA(LC(LS(N9))) 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
