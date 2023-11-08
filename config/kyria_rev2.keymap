@@ -39,8 +39,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
                 <&macro_wait 10>,
                 <&macro_oress &kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_tap &kp N8>,
-                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>,
-                ;
+                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
         switch_cyr {
             label = "Switch_Cyrillic";
@@ -51,8 +50,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
                 <&macro_wait 10>,
                 <&macro_oress &kp LA(LC(LG(LEFT_SHIFT)))>,
                 <&macro_tap &kp N9>,
-                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>,
-                ;
+                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
     };
 
