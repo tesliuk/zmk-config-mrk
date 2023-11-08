@@ -416,7 +416,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             // top line 
             &kp LA(LC(LS(N2))) &kp LA(LC(LS(N3))) &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(RIGHT)))) &kp LA(LSHIFT) &kp LALT /* middle */ &kp LEFT &kp RIGHT &kp DOWN &kp UP &kp LA(LC(LS(N2))) &kp LA(LC(LS(N3)))
             // second line
-            &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4))) &kp LA(LC(LG(LS(DN))))  &kp LA(LC(LG(LS(UP)))) &kp LS(LGUI) &kp LGUI /* middle */ &kp PAGE_DOWN &kp PAGE_UP &kp END &kp HOME &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4)))
+            &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4))) &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP)))) &kp LS(LGUI) &kp LGUI /* middle */ &kp PAGE_DOWN &kp PAGE_UP &kp END &kp HOME &kp LA(LC(LS(N1))) &kp LA(LC(LS(N4)))
             // bottom main line
             &kp LA(LC(LS(N9))) &trans &trans &trans &kp LG(PLUS) &kp LG(MINUS) /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp LA(LEFT) &kp LA(RIGHT) &kp LA(DOWN) &kp LA(UP) &trans &kp LA(LC(LS(N9))) 
             // bottom thumb cluster line
