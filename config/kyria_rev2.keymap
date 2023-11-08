@@ -64,6 +64,20 @@ ZMK_BEHAVIOR(msc, hold_tap,
     bindings = <&mo_symb_cyr>, <&kp>;
 )
 
+ZMK_BEHAVIOR(mnve, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_nav_eng>, <&kp>;
+)
+
+ZMK_BEHAVIOR(mnvc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_nav_cyr>, <&kp>;
+)
+
 ZMK_BEHAVIOR(mne, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -75,6 +89,13 @@ ZMK_BEHAVIOR(mnc, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
     bindings = <&mo_num_cyr>, <&kp>;
+)
+
+ZMK_BEHAVIOR(mfe, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_func_eng>, <&kp>;
 )
 
 ZMK_BEHAVIOR(mfc, hold_tap,
@@ -89,6 +110,20 @@ ZMK_BEHAVIOR(mte, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
     bindings = <&mo_typo_eng>, <&kp>;
+)
+
+ZMK_BEHAVIOR(mbc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_blt_cyr>, <&kp>;
+)
+
+ZMK_BEHAVIOR(mbe, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&mo_blt_eng>, <&kp>;
 )
 
 ZMK_BEHAVIOR(mtc, hold_tap,
@@ -143,7 +178,8 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             wait-ms = <10>;
             bindings 
                 = <&to 0>,
-                <&macro_tap &kp LA(LC(LG(LS(N8))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>,
+                <&macro_tap &kp F14>;
         };
         switch_cyr: switch_cyr {
             label = "Switch_Cyr";
@@ -152,7 +188,8 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             wait-ms = <10>;
             bindings 
                 = <&to 1>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>,
+                <&macro_tap &kp F15>;
         };
 
         mo_symb_eng: mo_symb_eng {
@@ -163,9 +200,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 5>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap F19>,
                 <&macro_pause_for_release>,
                 <&to 0>,
-                <&macro_tap &kp LA(LC(LG(LS(N8))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>,
+                <&macro_tap F14>;
         };
 
         mo_symb_cyr: mo_symb_cyr {
@@ -176,9 +215,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 5>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap F19>,
                 <&macro_pause_for_release>,
                 <&to 1>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>,
+                <&macro_tap F15>;
         };
         
         mo_num_eng: mo_num_eng {
@@ -189,9 +230,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 3>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap F17>,
                 <&macro_pause_for_release>,
                 <&to 0>,
-                <&macro_tap &kp LA(LC(LG(LS(N8))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>,
+                <&macro_tap F14>;
         };
 
         mo_num_cyr: mo_num_cyr {
@@ -202,9 +245,76 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 3>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap F17>,
                 <&macro_pause_for_release>,
                 <&to 1>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>,
+                <&macro_tap F15>;
+        };
+
+        mo_nav_eng: mo_nav_eng {
+            label = "Mo_Nav_Eng";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings 
+                = <&to 4>,
+                <&macro_tap F16>,
+                <&macro_pause_for_release>,
+                <&to 0>,
+                <&macro_tap F14>;
+        };
+
+        mo_nav_cyr: mo_nav_cyr {
+            label = "Mo_Nav_Cyr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings 
+                = <&to 4>,
+                <&macro_tap F16>,
+                <&macro_pause_for_release>,
+                <&to 1>,
+                <&macro_tap F15>;
+        };
+
+        mo_blt_eng: mo_blt_eng {
+            label = "Mo_Blt_Eng";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings 
+                = <&to 4>,
+                <&macro_tap F18>,
+                <&macro_pause_for_release>,
+                <&to 0>,
+                <&macro_tap F14>;
+        };
+
+        mo_blt_cyr: mo_blt_cyr {
+            label = "Mo_Blt_Cyr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings 
+                = <&to 4>,
+                <&macro_tap F18>,
+                <&macro_pause_for_release>,
+                <&to 1>,
+                <&macro_tap F15>;
+        };
+
+        mo_func_eng: mo_func_eng {
+            label = "Mo_Func_Eng";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings 
+                = <&to 6>,
+                <&macro_tap F20>,
+                <&macro_pause_for_release>,
+                <&to 1>,
+                <&macro_tap F14>;
         };
 
         mo_func_cyr: mo_func_cyr {
@@ -215,9 +325,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 6>,
                 <&macro_tap &kp LA(LC(LG(LS(N8))))>,
+                <&macro_tap F20>,
                 <&macro_pause_for_release>,
                 <&to 1>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>,
+                <&macro_tap F15>;
         };
 
         mo_typo_eng: mo_typo_eng {
@@ -228,9 +340,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 7>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap &kp F21>,
                 <&macro_pause_for_release>,
                 <&to 0>,
-                <&macro_tap &kp LA(LC(LG(LS(N8))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>
+                <&macro_tap F14>;
 
         };
         mo_typo_cyr: mo_typo_cyr {
@@ -241,9 +355,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             bindings 
                 = <&to 7>,
                 <&macro_tap &kp LA(LC(LG(LS(N7))))>,
+                <&macro_tap &kp F21>,
                 <&macro_pause_for_release>,
                 <&to 1>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>,
+                <&macro_tap F15>;
         };
 
         alt_cyr: alt_cyr {
@@ -423,9 +539,9 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             // second line
             &mt LA(LC(LEFT_SHIFT)) TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
             // bottom main line
-            &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LEFT_SHIFT)) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp QUESTION
+            &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LEFT_SHIFT)) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &mbe 0 QUESTION
             // bottom thumb cluster line
-            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 MINUS  /* middle */ &kp ENTER &lt 4 LPAR &lt 6 RPAR &kp DOWN &kp UP
+            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 MINUS  /* middle */ &kp ENTER &mnve 0 LPAR &mfe 0 RPAR &kp DOWN &kp UP
             >;
         };
 
@@ -436,9 +552,9 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             // second line
             &mehr 0 TAB &ctlr 0 A &altr 0 S &guir 0 D &hrm LSHIFT F &lt 2 G /* middle */ &lt 2 H &hrm RSHIFT J &guir 0 K &altr 0 L &ctlr 0 SEMI &punct_cyr SEMI
             // bottom main line
-            &trans &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr 0 SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &punct_cyr QUESTION 
+            &trans &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr 0 SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &mbc 0 LS(N7) 
             // bottom thumb cluster line
-            &trans &trans &mtc 0 LG(V) &msc 0 LG(C) &mnc 0 MINUS /* middle */ &trans &lt 4 LPAR &mfc 0 RPAR &trans &trans           
+            &trans &trans &mtc 0 LG(V) &msc 0 LG(C) &mnc 0 MINUS /* middle */ &trans &mnvc 0 LPAR &mfc 0 RPAR &trans &trans           
             >;
         };
 
