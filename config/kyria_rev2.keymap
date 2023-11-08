@@ -350,11 +350,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _cyr_main {
             bindings = <
             // top line 
-            &hyperr ESCAPE &kp Q &kp W &kp E &kp R &kp T /* middle */ &kp Y &kp U &kp I &kp O &punct_cyr APOS &punct_cyr COLON
+            &hyperr 0 ESCAPE &kp Q &kp W &kp E &kp R &kp T /* middle */ &kp Y &kp U &kp I &kp O &punct_cyr APOS &punct_cyr COLON
             // second line
             &mehr 0 TAB &ctlr 0 A &altr 0 S &guir 0 D &hrm LSHIFT F &lt 2 G /* middle */ &lt 2 H &hrm RSHIFT J &guir 0 K &altr 0 L &ctlr 0 SEMI &punct_cyr SEMI
             // bottom main line
-            &trans &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &punct_cyr QUESTION 
+            &trans &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr 0 SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &punct_cyr QUESTION 
             // bottom thumb cluster line
             &trans &trans &msc 0 LG(V) &msc 0 LG(C) &msc 0 MINUS /* middle */ &trans &lt 4 LPAR &msc 0 RPAR &trans &trans           
             >;
