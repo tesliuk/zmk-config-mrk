@@ -151,7 +151,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             bindings = <
 
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &kp K &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
             // second line
             &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
             // bottom main line
