@@ -486,7 +486,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             // top line 
             &ellipsis &euro &kp AMPERSAND &kp KP_MULTIPLY &kp PLUS &kp EQUAL  /* middle */ &ldquo &rdquo &kp DQT &checkmark &kp BSLH &em_dash
             // second line 
-            &kp GRAVE &yen &kp DOLLAR &kp PERCENT &kp CARET &kp approx /* middle */ &laquo &raguo &minidot &degree &FSLH &horizontal_bar
+            &kp GRAVE &yen &kp DOLLAR &kp PERCENT &kp CARET &approx /* middle */ &laquo &raguo &minidot &degree &kp FSLH &horizontal_bar
             // bottom main line
             &kp TILDE &pound &kp EXCL &kp AT &kp POUND &neq /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &leq &geq &inverted_question_mark &bullet &kp PIPE &kp UNDER 
             // bottom thumb cluster line
