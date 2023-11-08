@@ -24,25 +24,23 @@
 ZMK_UNICODE_SINGLE(em_dash,        N2, N0, N1, N4)  // —: U+2014
 ZMK_UNICODE_SINGLE(horizontal_bar, N2, N0, N1, N5)  // ―: U+2015
 ZMK_UNICODE_SINGLE(ellipsis,       N2, N0, N2, N6)  // …: U+2026
-// ZMK_UNICODE_SINGLE(pound,          N0, N0, A, N3)  // £: U+00A3
-// ZMK_UNICODE_SINGLE(dollar,         N0, N0, N2, N4)  // $: U+0024
-// ZMK_UNICODE_SINGLE(rouble,         N2, N0, B, D)  // ₽: U+20BD
+ZMK_UNICODE_SINGLE(pound,          N0, N0, A, N3)  // £: U+00A3
 ZMK_UNICODE_SINGLE(euro,           N2, N0, A, C)  // €: U+20AC
+ZMK_UNICODE_SINGLE(yen,            N0, N0, A, N5)  // ¥: U+00A5
 ZMK_UNICODE_SINGLE(leq,            N2, N2, N6, N4)  // ≤: U+2264
 ZMK_UNICODE_SINGLE(geq,            N2, N2, N6, N5)  // ≥: U+2265
 ZMK_UNICODE_SINGLE(approx,         N2, N2, N4, N8)  // ≈: U+2248
 ZMK_UNICODE_SINGLE(times,          N0, N0, D, N7)  // ×: U+00D7
-// ZMK_UNICODE_SINGLE(ldquo,          N2, N0, N1, E)  // „: U+201E
-// ZMK_UNICODE_SINGLE(rdquo,          N2, N0, N1, C)  // “: U+201C
-// ZMK_UNICODE_SINGLE(laquo,          N0, N0, A, B)  // «: U+00AB
-// ZMK_UNICODE_SINGLE(raquo,          N0, N0, B, B)  // »: U+00BB
-// ZMK_UNICODE_SINGLE(bullet,         N2, N0, N2, N2)  // •: U+2022
-// ZMK_UNICODE_SINGLE(plusminus,      N0, N0, B, N1)  // ±: U+00B1
-// ZMK_UNICODE_SINGLE(degree,         N0, N0, B, N0)  // °: U+00B0
+ZMK_UNICODE_SINGLE(ldquo,          N2, N0, N1, E)  // „: U+201E
+ZMK_UNICODE_SINGLE(rdquo,          N2, N0, N1, C)  // “: U+201C
+ZMK_UNICODE_SINGLE(laquo,          N0, N0, A, B)  // «: U+00AB
+ZMK_UNICODE_SINGLE(raquo,          N0, N0, B, B)  // »: U+00BB
+ZMK_UNICODE_SINGLE(bullet,         N2, N5, F, C)  // ◼: U+25FC
+ZMK_UNICODE_SINGLE(minidot,        N0, N0, B, N7)  // ·: U+00B7
+ZMK_UNICODE_SINGLE(checkmark,      N2, N7, N1, N4)  // ✔: U+2714
+ZMK_UNICODE_SINGLE(degree,         N0, N0, B, N0)  // °: U+00B0
 ZMK_UNICODE_SINGLE(div,            N0, N0, F, N7)  // ÷: U+00F7
 ZMK_UNICODE_SINGLE(neq,            N2, N2, N6, N0)  // ≠: U+2260
-// ZMK_UNICODE_SINGLE(copy,           N0, N0, A, N9)  // ©: U+00A9
-// ZMK_UNICODE_SINGLE(trade,          N2, N2, N2, N2)  // ™: U+2122
 ZMK_UNICODE_SINGLE(inverted_question_mark, N0, N0, B, F)  // ¿: U+00BF
 
 ZMK_BEHAVIOR(hrm, hold_tap,
@@ -421,20 +419,20 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             _base {
             bindings = <
             // top line
-            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &kp COLON
+            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &kp MINUS
             // second line
             &mt LA(LC(LEFT_SHIFT)) TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
             // bottom main line
             &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LEFT_SHIFT)) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp QUESTION
             // bottom thumb cluster line
-            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 MINUS  /* middle */ &kp ENTER &lt 4 LPAR &mfe 0 RPAR &kp DOWN &kp UP
+            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 MINUS  /* middle */ &kp ENTER &lt 4 LPAR &lt 6 RPAR &kp DOWN &kp UP
             >;
         };
 
         _cyr_main {
             bindings = <
             // top line 
-            &hyperr 0 ESCAPE &kp Q &kp W &kp E &kp R &kp T /* middle */ &kp Y &kp U &kp I &kp O &punct_cyr APOS &punct_cyr COLON
+            &hyperr 0 ESCAPE &kp Q &kp W &kp E &kp R &kp T /* middle */ &kp Y &kp U &kp I &kp O &punct_cyr APOS &punct_cyr MINUS
             // second line
             &mehr 0 TAB &ctlr 0 A &altr 0 S &guir 0 D &hrm LSHIFT F &lt 2 G /* middle */ &lt 2 H &hrm RSHIFT J &guir 0 K &altr 0 L &ctlr 0 SEMI &punct_cyr SEMI
             // bottom main line
@@ -460,7 +458,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _num {
             bindings = <
             // top line 
-            &times &kp MINUS &kp N7 &kp N8 &kp N9 &kp PLUS /* middle */ &kp LPAR &kp RPAR &kp LT &kp GT &kp APOS &kp COLON
+            &times &kp MINUS &kp N7 &kp N8 &kp N9 &kp PLUS /* middle */ &kp LPAR &kp RPAR &kp LT &kp GT &kp APOS &kp MINUS
             // second line
             &div &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp FSLH  /* middle */ &kp LBKT &kp RBKT &leq &geq &kp UNDER &kp SEMI
             // bottom main line
@@ -486,11 +484,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _symbol {
             bindings = <
             // top line 
-            &trans &kp G &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &ellipsis &euro &kp AMPERSAND &kp KP_MULTIPLY &kp PLUS &kp EQUAL /* middle */ &ldquo &rdquo &kp DQT &checkmark &BSLH &em_dash
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &kp GRAVE &yen &kp DOLLAR &kp PERCENT &kp CARET &kp approx /* middle */ &laquo &raguo &minidot &degree &FSLH &horizontal_bar
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &kp TILDE &pound &kp EXCL &kp AT &kp POUND &neq /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &leq &geq &inverted_question_mark &bullet &kp PIPE &kp UNDER 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
@@ -499,11 +497,11 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
         _function {
             bindings = <
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &kp LG(L) &kp F12 &kp F7 &kp F8 &kp F9 &kp LG(S) /* middle */ &kp LG(C) &kp LG(V) &kp LG(X) &kp K_MUTE &kp C_VOL_UP &kp C_VOL_DN
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &kp F11 &kp F4 &kp F5 &kp F6 &kp LG(T) /* middle */ &kp LG(Z) &kp LG(Y) &trans &kp C_PLAY_PAUSE &kp C_PREVIOUS &kp C_NEXT
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &kp LG(COMMA) &kp F10 &kp F1 &kp F2 &kp F3 &kp LG(N) /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp LG(W) &kp LG(Q) &trans &trans &kp C_BRI_UP &kp C_BRI_DN 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
