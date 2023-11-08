@@ -30,8 +30,8 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 / {
 
     macros {
-        switch_eng {
-            label = "switch_eng";
+        switch_eng: switch_eng {
+            label = "Switch_Eng";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -42,8 +42,8 @@ ZMK_BEHAVIOR(hrm, hold_tap,
                 <&macro_tap &kp N8>,
                 <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
-        switch_cyr {
-            label = "switch_cyr";
+        switch_cyr: switch_cyr {
+            label = "Switch_Cyr";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
