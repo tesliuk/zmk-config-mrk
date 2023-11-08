@@ -137,11 +137,11 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             _base {
             bindings = <
             // top line
-            &kp ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &kp COLON
+            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &kp COLON
             // second line
-            &kp TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
+            &mt LA(LC(LEFT_SHIFT)) TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
             // bottom main line
-            &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LG(LEFT_SHIFT))) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp QUESTION
+            &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LEFT_SHIFT)) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp QUESTION
             // bottom thumb cluster line
             &kp LEFT &kp RIGHT &lt 7 LG(V) &lt 5 LG(C) &lt 3 MINUS  /* middle */ &kp ENTER &lt 4 LPAR &lt 6 RPAR &kp DOWN &kp UP
             >;
