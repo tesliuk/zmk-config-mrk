@@ -61,6 +61,22 @@ ZMK_BEHAVIOR(msc, hold_tap,
                 <&macro_tap &kp N9>,
                 <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
         };
+        // mo_symb_cyr: mo_symb_cyr {
+        //     label = "Mo_Symb_Cyr";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     wait-ms = <10>;
+        //     bindings 
+        //         = <&to 5>,
+        //         <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
+        //         <&macro_tap &kp N8>,
+        //         <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>,
+        //         <&macro_pause_for_release>,
+        //         <&to 1>,
+        //         <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
+        //         <&macro_tap &kp N9>,
+        //         <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
+        // };
         mo_symb_cyr: mo_symb_cyr {
             label = "Mo_Symb_Cyr";
             compatible = "zmk,behavior-macro";
@@ -68,14 +84,10 @@ ZMK_BEHAVIOR(msc, hold_tap,
             wait-ms = <10>;
             bindings 
                 = <&to 5>,
-                <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
-                <&macro_tap &kp N8>,
-                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>,
+                <&macro_tap &kp LA(LC(LG(LS(N8))))>,
                 <&macro_pause_for_release>,
                 <&to 1>,
-                <&macro_press &kp LA(LC(LG(LEFT_SHIFT)))>,
-                <&macro_tap &kp N9>,
-                <&macro_release &kp LA(LC(LG(LEFT_SHIFT)))>;
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
         };
         };
     
