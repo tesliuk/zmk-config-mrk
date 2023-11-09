@@ -509,7 +509,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
 
         combo_bt_clr {
             key-positions = <12 24>;
-            bindings = <&bt BT_CLR;
+            bindings = <&bt BT_CLR>;
             layers = <8>;
             require-prior-idle-ms = <150>;
         };
