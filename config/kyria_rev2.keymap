@@ -764,9 +764,9 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             // top line 
             &trans &trans &breve &acute &grave &circumflex /* middle */ &trans &trans &trans &trans &trans &trans
             // second line
-            &trans &trans &trans &diaeresis &tilde &angstrom /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &diaeresis &tilde &angstrom /* middle */ &trans &kp RSHIFT &trans &trans &trans &trans
             // bottom main line
-            &trans &trans &trans &cedilla &ligature &stroke /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &kp RSHIFT /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &trans &trans &trans &cedilla &ligature &stroke /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
