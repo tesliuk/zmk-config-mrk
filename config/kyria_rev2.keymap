@@ -477,6 +477,87 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
                 <&macro_tap &kp ESC>;
         };
 
+        acute: acute {
+            label = "Acute";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp FSLH>;
+        };
+
+        grave: grave {
+            label = "Grave";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp BSLH>;
+        };
+
+        circumflex: circumflex {
+            label = "Circumflex";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp CARET>;
+        };
+
+        diaeresis: diaeresis {
+            label = "Diaeresis";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp COLON>;
+        };
+
+        tilde: tilde {
+            label = "Tilde";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp TILDE>;
+        };
+
+        angstrom: angstrom {
+            label = "Angstrom";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp N0>;
+        };
+
+        cedilla: cedilla {
+            label = "Cedilla";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp PIPE>;
+        };
+
+        ligature: ligature {
+            label = "Ligature";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp EQUAL>;
+        };
+
+        stroke: stroke {
+            label = "Stroke";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp MINUS>;
+        };
+
+        breve: breve {
+            label = "Breve";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings 
+                = <&macro_tap &kp SEMI and &kp SEMI &kp RPAR>;
+        };
+
+
         };
 
     combos {
@@ -681,11 +762,11 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
         _typography {
             bindings = <
             // top line 
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &trans &breve &acute &grave &circumflex /* middle */ &trans &trans &trans &trans &trans &trans
             // second line
-            &trans &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &diaeresis &tilde &angstrom /* middle */ &trans &trans &trans &trans &trans &trans
             // bottom main line
-            &trans &trans &trans &trans &trans &trans /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
+            &trans &trans &trans &cedilla &ligature &stroke /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
             // bottom thumb cluster line
             &trans &trans &trans &trans &trans /* middle */ &trans &trans &trans &trans &trans  
             >;
