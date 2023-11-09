@@ -482,7 +482,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp FSLH>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp FSLH>;
         };
 
         grave: grave {
@@ -490,7 +490,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp BSLH>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp BSLH>;
         };
 
         circumflex: circumflex {
@@ -498,7 +498,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp CARET>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp CARET>;
         };
 
         diaeresis: diaeresis {
@@ -506,7 +506,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp COLON>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp COLON>;
         };
 
         tilde: tilde {
@@ -514,7 +514,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp TILDE>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp TILDE>;
         };
 
         angstrom: angstrom {
@@ -522,7 +522,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp N0>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp N0>;
         };
 
         cedilla: cedilla {
@@ -530,7 +530,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp PIPE>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp PIPE>;
         };
 
         ligature: ligature {
@@ -538,7 +538,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp EQUAL>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp EQUAL>;
         };
 
         stroke: stroke {
@@ -546,7 +546,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp MINUS>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp MINUS>;
         };
 
         breve: breve {
@@ -554,7 +554,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = <&macro_tap &kp SEMI and &kp SEMI &kp RPAR>;
+                = <&macro_tap &kp SEMI &kp SEMI &kp RPAR>;
         };
 
 
