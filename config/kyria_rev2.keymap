@@ -597,7 +597,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             _base {
             bindings = <
             // top line
-            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &cmdtab MINUS
+            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &cmdtab 0 MINUS
             // second line
             &mt LA(LC(LEFT_SHIFT)) TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
             // bottom main line
