@@ -169,6 +169,13 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
     bindings = <&hyper_cyr>, <&kp>;
 )
 
+ZMK_BEHAVIOR(cmdtab, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&cmd_tab>, <&kp>;
+)
+
 / {
 
     macros {
@@ -454,6 +461,17 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
                 <&macro_tap &kp LA(LC(LG(LS(N9))))>;
         };
 
+        cmd_tab: cmd_tab {
+            label = "Cmd_Tab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <200>;
+            bindings
+                = <&macro_tap &sk LG(TAB)>,
+                <&macro_pause_for_release>,
+                <&macro_tap &kp ESC>;
+        };
+
         };
 
     combos {
@@ -579,7 +597,7 @@ ZMK_BEHAVIOR(hyperr, hold_tap,
             _base {
             bindings = <
             // top line
-            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &kp MINUS
+            &mt LA(LC(LG(LEFT_SHIFT))) ESCAPE &kp Q &kp W &kp F &kp P &kp B  /* middle */ &kp J &kp L &kp U &kp Y &kp APOS &cmdtab MINUS
             // second line
             &mt LA(LC(LEFT_SHIFT)) TAB &hrm LCTRL A &hrm LALT R &hrm LGUI S &hrm LSHIFT T &kp G /* middle */ &kp M &hrm RSHIFT N &hrm RGUI E &hrm RALT I &hrm RCTRL O &kp SEMI
             // bottom main line
