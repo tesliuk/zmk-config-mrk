@@ -492,7 +492,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
         };
 
         combo_lang_sync {
-            bindings = <&Change_lang>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <4 5>;
             layers = <0 1 2>;
             require-prior-idle-ms = <150>;
