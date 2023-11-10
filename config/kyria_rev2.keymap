@@ -84,13 +84,13 @@ ZMK_BEHAVIOR(mne, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&mo_num_eng>, <&kp>;
+    bindings = <&mo_num_eng>, <&dot_shift_eng>;
 )
 ZMK_BEHAVIOR(mnc, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&mo_num_cyr>, <&kp>;
+    bindings = <&mo_num_cyr>, <&dot_shift_cyr>;
 )
 
 ZMK_BEHAVIOR(mfe, hold_tap,
@@ -205,6 +205,26 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
                 <&macro_tap &kp F15>;
         };
 
+        dot_shift_eng: dot_shift_eng {
+            label = "Dot_Shift_Eng";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+                = <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>;
+        };
+
+        dot_shift_cyr: dot_shift_cyr {
+            label = "Dot_Shift_Cyr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+                = <&macro_tap &kp LA(LC(LG(LS(N8))))>,
+                <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>,
+                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+        };
+                
         mo_symb_eng: mo_symb_eng {
             label = "Mo_Symb_Eng";
             compatible = "zmk,behavior-macro";
@@ -677,7 +697,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             // bottom main line
             &kp TILDE &kp Z  &kp X &kp C &kp D &kp V /* thumb cluster -> */ &mt LA(LC(LEFT_SHIFT)) SPACE &kp LSHFT /* middle */ &kp BSPC &kp DEL /* <- thumb cluster */ &kp K &kp H &kp COMMA &kp DOT &kp FSLH &mbe 0 QUESTION
             // bottom thumb cluster line
-            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 MINUS  /* middle */ &kp ENTER &mnve 0 LPAR &mfe 0 RPAR &kp DOWN &kp UP
+            &kp LEFT &kp RIGHT &mte 0 LG(V) &mse 0 LG(C) &mne 0 0  /* middle */ &kp ENTER &mnve 0 LPAR &mfe 0 RPAR &kp DOWN &kp UP
             >;
         };
 
@@ -690,7 +710,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             // bottom main line
             &punct_cyr TILDE &kp Z &kp X &kp C &kp V &kp B /* top thumb cluster line -> */ &mehr 0 SPACE &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &kp N &kp M &punct_cyr COMMA &punct_cyr DOT &punct_cyr FSLH &mbc 0 LS(N7) 
             // bottom thumb cluster line
-            &trans &trans &mtc 0 LG(V) &msc 0 LG(C) &mnc 0 MINUS /* middle */ &trans &mnvc 0 LPAR &mfc 0 RPAR &trans &trans           
+            &trans &trans &mtc 0 LG(V) &msc 0 LG(C) &mnc 0 0 /* middle */ &trans &mnvc 0 LPAR &mfc 0 RPAR &trans &trans           
             >;
         };
 
