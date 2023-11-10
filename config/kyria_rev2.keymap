@@ -220,9 +220,7 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-                = <&macro_tap &kp LA(LC(LG(LS(N8))))>,
-                <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>,
-                <&macro_tap &kp LA(LC(LG(LS(N9))))>;
+                = <&macro_tap &kp FSLH &kp SPACE &sk LSHIFT>;
         };
                 
         mo_symb_eng: mo_symb_eng {
