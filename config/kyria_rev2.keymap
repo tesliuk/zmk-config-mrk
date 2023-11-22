@@ -11,6 +11,7 @@
 
 #define HOST_OS 2
 #include "../zmk-nodefree-config/helper.h"
+#include <dt-bindings/zmk/ext_power.h>
 
 
 #include "../zmk-nodefree-config/keypos_def/keypos_50keys.h"
@@ -872,9 +873,9 @@ ZMK_BEHAVIOR(cmdtab, hold_tap,
         _typography {
             bindings = <
             // top line 
-            &trans &trans &breve &acute &grave &circumflex /* middle */ &trans &trans &trans &trans &trans &trans
+            &ext_power EP_ON &trans &breve &acute &grave &circumflex /* middle */ &trans &trans &trans &trans &trans &trans
             // second line
-            &trans &trans &trans &diaeresis &tilde &angstrom /* middle */ &trans &kp RSHIFT &trans &trans &trans &trans
+            &ext_power EP_OFF &trans &trans &diaeresis &tilde &angstrom /* middle */ &trans &kp RSHIFT &trans &trans &trans &trans
             // bottom main line
             &trans &trans &trans &cedilla &ligature &stroke /* top thumb cluster line -> */ &trans &trans /* middle */ &trans &trans /* <- top thumb cluster line */ &trans &trans &trans &trans &trans &trans 
             // bottom thumb cluster line
